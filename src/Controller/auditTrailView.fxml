@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="48.0" prefWidth="228.0" text="Audit Trail For :" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookTitleField" editable="false" layoutX="211.0" layoutY="10.0" prefHeight="27.0" prefWidth="292.0" promptText="Book Title" />
+      <Separator layoutX="-3.0" layoutY="40.0" prefHeight="13.0" prefWidth="600.0" />
+      <TableView fx:id="auditTrailTable" layoutY="47.0" prefHeight="354.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="timestampColumn" prefWidth="296.0" text="Timestamp of Message" />
+            <TableColumn fx:id="messageColumn" prefWidth="303.0" text="Message" />
+         </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="527.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#backButtonClicked" text="Back" />
+   </children>
+</AnchorPane>
