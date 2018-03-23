@@ -10,7 +10,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import Book.AuditTrailEntry;
+import Book.Author;
 import Book.Book;
+import Database.AuthorGateway;
 import Database.BookGateway;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -27,7 +29,12 @@ public class AuditTrailController implements MyController, Initializable {
 	
 	private BookGateway gateway;
 	private Book book;
+	private AuthorGateway Agateway;
+	private Author author;
 	private ObservableList<AuditTrailEntry> auditTrail;
+	public static final int BOOKTRAIL = 1;
+	public static final int AUTHORTRAIL = 2;
+	private String title;
 
 	@FXML private TextField bookTitleField;
 
@@ -38,12 +45,26 @@ public class AuditTrailController implements MyController, Initializable {
     @FXML private TableColumn<AuditTrailEntry, String> messageColumn;
 
     @FXML private Button backButton;
-
-    public AuditTrailController(BookGateway gate, Book book) {
+    
+    public AuditTrailController(int type, Object arg1, Object arg2) {
     		auditTrailTable = new TableView<AuditTrailEntry>();
-    		setGateway(gate);
-    		setAuditTrail(gateway.getAuditTrail(book));
-    		setBook(book);
+    		switch(type) {
+    		case BOOKTRAIL:
+    			setGateway((BookGateway)arg1);
+    			setBook((Book)arg2);
+    			BookGateway gate = getGateway();
+    			Book bk = getBook();
+    			setAuditTrail(gate.getAuditTrail(bk));
+    			title = bk.getTitle();
+    			break;
+    		case AUTHORTRAIL:
+    			setAgateway((AuthorGateway)arg1);
+    			setAuthor((Author)arg2);
+    			AuthorGateway aGate = getAgateway();
+    			Author author = getAuthor();
+    			setAuditTrail(aGate.getAuditTrail(author));
+    			title = author.getFirstName() + author.getLastName();
+    		}
     }
     
     @FXML
@@ -84,9 +105,25 @@ public class AuditTrailController implements MyController, Initializable {
 		this.auditTrail = auditTrail;
 	}
 
+	public AuthorGateway getAgateway() {
+		return Agateway;
+	}
+
+	public void setAgateway(AuthorGateway agateway) {
+		Agateway = agateway;
+	}
+
+	public Author getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Author author) {
+		this.author = author;
+	}
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		bookTitleField.setText(getBook().getTitle());
+		bookTitleField.setText(title);
 		timestampColumn.setCellValueFactory(new PropertyValueFactory("dateAdded"));
 		messageColumn.setCellValueFactory(new PropertyValueFactory("message"));
 		auditTrailTable.setItems(auditTrail);

@@ -10,6 +10,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import Book.Book;
+import Book.Author;
+import Database.AuthorGateway;
 import Database.BookGateway;
 import Database.PublisherGateway;
 import Model.AppException;
@@ -33,7 +35,10 @@ public class MenuController implements Initializable, MyController{
 	public static final int BOOKDETAIL = 2;
 	public static final int ADDBOOK = 3;
 	public static final int HELP = 4;
-	public static final int AUDITTRAIL = 5;
+	public static final int BOOKAUDITTRAIL = 5;
+	public static final int AUTHORLIST = 6;
+	public static final int AUTHORDETAIL = 7;
+	public static final int AUTHORAUTIDTRAIL = 8;
 	@FXML private MenuItem Exit;
 
     @FXML private MenuItem BookList;
@@ -43,8 +48,11 @@ public class MenuController implements Initializable, MyController{
     @FXML private MenuItem helpButton;
    
     @FXML private Button doneButton;
+    
+    @FXML private MenuItem AuthorList;
+    
+    @FXML private MenuItem addAuthor;
 
-	
 	public static MenuController getInstance() {
 		if (singleton == null) {
 			singleton = new MenuController();
@@ -78,6 +86,22 @@ public class MenuController implements Initializable, MyController{
 
 		}
     }
+    
+    @FXML
+    void addAuthorClicked(ActionEvent event) {
+    		if(event.getSource() == addAuthor) {
+    			logger.info("Add author clicked");
+    			try {
+    				Author author = new Author();
+    				author.setGateway(new AuthorGateway(connection));
+    				changeViews(AUTHORDETAIL, author);
+    			} catch (IOException e) {
+    				e.printStackTrace();
+    			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+    		}
+    }
 
     @FXML
     void bookListClicked(ActionEvent event) throws SQLException {
@@ -90,6 +114,18 @@ public class MenuController implements Initializable, MyController{
 				e.printStackTrace();
 			} 
 		}
+    }
+    
+    @FXML
+    void authorListClicked(ActionEvent event) throws SQLException {
+    		logger.info("author List clicked");
+    		if(event.getSource() == AuthorList) {
+    			try {
+    				changeViews(AUTHORLIST, "");
+    			} catch (IOException e) {
+    				e.printStackTrace();
+    			}
+    		}
     }
 
     @FXML
@@ -138,9 +174,21 @@ public class MenuController implements Initializable, MyController{
 				fxmlFile = this.getClass().getResource("aboutScreen.fxml");
 				controller = MenuController.getInstance();
 				break;
-			case AUDITTRAIL:
+			case BOOKAUDITTRAIL:
 				fxmlFile = this.getClass().getResource("auditTrailView.fxml");
-				controller = new AuditTrailController(new BookGateway(connection), (Book)arg);
+				controller = new AuditTrailController(AuditTrailController.BOOKTRAIL, new BookGateway(connection), (Book)arg);
+				break;
+			case AUTHORLIST:
+				fxmlFile = this.getClass().getResource("AuthorListView.fxml");
+				controller = new AuthorListController(new AuthorGateway(connection));
+				break;
+			case AUTHORDETAIL:
+				fxmlFile = this.getClass().getResource("AuthorDetailView.fxml");
+				controller = new AuthorDetailController((Author)arg);
+				break;
+			case AUTHORAUTIDTRAIL:
+				fxmlFile = this.getClass().getResource("auditTrailView.fxml");
+				controller = new AuditTrailController(AuditTrailController.AUTHORTRAIL, new AuthorGateway(connection), (Author)arg);
 			}
 			FXMLLoader loader = new FXMLLoader(fxmlFile);
 			loader.setController(controller);

@@ -124,7 +124,7 @@ public class BookDetailController implements MyController, Initializable {
     		
     		if(event.getClickCount() == 1 && book.getId() != 0) {
     			try {
-					MenuController.getInstance().changeViews(MenuController.AUDITTRAIL, this.book);
+					MenuController.getInstance().changeViews(MenuController.BOOKAUDITTRAIL, this.book);
 				} catch (IOException e) {
 					e.printStackTrace();
 				} catch (SQLException e) {

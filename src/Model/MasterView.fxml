@@ -5,7 +5,6 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
@@ -21,6 +20,12 @@
                   <MenuItem fx:id="addBook" mnemonicParsing="false" onAction="#addBookClicked" text="Add Book" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Authors">
+              <items>
+                <MenuItem fx:id="AuthorList" mnemonicParsing="false" onAction="#authorListClicked" text="Author List" />
+                  <MenuItem fx:id="addAuthor" mnemonicParsing="false" onAction="#addAuthorClicked" text="Add Author" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
               <MenuItem fx:id="helpButton" mnemonicParsing="false" onAction="#helpScreen" text="About" />
