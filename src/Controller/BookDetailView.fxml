@@ -23,7 +23,6 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <ComboBox fx:id="publisherBox" prefHeight="27.0" prefWidth="171.0" GridPane.columnIndex="1">
@@ -67,8 +66,17 @@
          </padding>
       </Label>
       <TextField fx:id="isbnField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Button fx:id="saveButton" mnemonicParsing="false" onMouseClicked="#saveButtonClicked" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <Button fx:id="auditTrailButton" mnemonicParsing="false" onMouseClicked="#auditTrailClicked" text="Audit Trail" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-      <Button fx:id="backButton" mnemonicParsing="false" onMouseClicked="#detailBackClicked" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Button fx:id="saveButton" mnemonicParsing="false" onMouseClicked="#saveButtonClicked" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin></Button>
+      <Button fx:id="auditTrailButton" mnemonicParsing="false" onMouseClicked="#auditTrailClicked" text="Audit Trail" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="35.0" />
+         </GridPane.margin></Button>
+      <Button fx:id="backButton" mnemonicParsing="false" onMouseClicked="#detailBackClicked" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></Button>
    </children>
 </GridPane>

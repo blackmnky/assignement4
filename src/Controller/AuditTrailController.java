@@ -63,16 +63,24 @@ public class AuditTrailController implements MyController, Initializable {
     			AuthorGateway aGate = getAgateway();
     			Author author = getAuthor();
     			setAuditTrail(aGate.getAuditTrail(author));
-    			title = author.getFirstName() + author.getLastName();
+    			title = author.getFirstName() + " " + author.getLastName();
     		}
     }
     
     @FXML
     void backButtonClicked(MouseEvent event) {
     		logger.info("back button clicked");
-    		if(event.getClickCount() == 1) {
+    		if(event.getClickCount() == 1 && getBook() != null) {
     			try {
 					MenuController.getInstance().changeViews(MenuController.BOOKDETAIL, this.getBook());
+				} catch (IOException e) {
+					e.printStackTrace();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+    		}else if(event.getClickCount() == 1 && getAuthor() != null) {
+    			try {
+					MenuController.getInstance().changeViews(MenuController.AUTHORDETAIL, this.getAuthor());
 				} catch (IOException e) {
 					e.printStackTrace();
 				} catch (SQLException e) {

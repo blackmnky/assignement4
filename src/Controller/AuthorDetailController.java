@@ -1,6 +1,8 @@
 package Controller;
 
+import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import org.apache.logging.log4j.LogManager;
@@ -53,6 +55,13 @@ public class AuthorDetailController implements Initializable, MyController {
 
 	@FXML
 	private Label firstNameLabel;
+	
+	@FXML
+    private Button backButton;
+
+    @FXML
+    private Button auditTrailButton;
+
 
 	public AuthorDetailController(Author author) {
 		singleton = MenuController.getInstance();
@@ -90,6 +99,36 @@ public class AuthorDetailController implements Initializable, MyController {
 			MenuController.getInstance().changeViews(MenuController.AUTHORLIST, null);
 		}
 	}
+	
+	@FXML
+    void auditTrailClicked(MouseEvent event) {
+		logger.info("audit trail for author clicked");
+		if(event.getClickCount() == 1 && author.getId() != 0) {
+			try {
+				MenuController.getInstance().changeViews(MenuController.AUTHORAUTIDTRAIL, this.author);
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}else if(author.getId() == 0) {
+			logger.info("Tried to access audit trail of new author before saving");
+			Model.AlertHelper.showWarningMessage("Error","Please Save Author Before Viewing Audit Trail", "683-25-9-601 new author");
+			return;
+		}
+    }
+
+    @FXML
+    void detailBackClicked(MouseEvent event) {
+    		logger.info("back button clicked");
+    		if(event.getClickCount() == 1) {
+    			try {
+					MenuController.getInstance().changeViews(MenuController.AUTHORLIST, "");
+				} catch (IOException | SQLException e) {
+					e.printStackTrace();
+				}
+    		}
+    }
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
