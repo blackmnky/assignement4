@@ -65,8 +65,8 @@ public class AuthorGateway {
 		LocalDateTime time = null;
 		PreparedStatement st = null;
 		try {
-			st = connection.prepareStatement("select * from Author where first_name = ?");
-			st.setString(1, author.getFirstName());
+			st = connection.prepareStatement("select * from Author where id = ?");
+			st.setInt(1, author.getId());
 			ResultSet rs = st.executeQuery();
 			while (rs.next()) {
 				time = rs.getTimestamp("last_modified").toLocalDateTime();
@@ -89,6 +89,7 @@ public class AuthorGateway {
 		PreparedStatement st = null;
 		Date date = Date.valueOf(author.getDOB());
 		LocalDateTime dbTime = getTimeStamp(author);
+		insertAuditTrail(author);
 		if(dbTime.equals(author.getLast_modified())) {
 			try {
 				st = connection.prepareStatement("update Author set first_name = ?, last_name = ?, dob = ?, gender = ?, website = ? where id = ?");
@@ -130,6 +131,7 @@ public class AuthorGateway {
 			ResultSet rs = st.getGeneratedKeys();
 			rs.next();
 			insertAuditEntry(getAuthorById(rs.getInt(1)), "Author Added");
+			author.setId(rs.getInt(1));
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
@@ -183,7 +185,7 @@ public class AuthorGateway {
 				if(!author.getGender().equals(rs.getString("gender")))
 					insertAuditEntry(author, "Gender changed from " + rs.getString("gender") + "to" + author.getGender()); 
 				if(!author.getWebField().equals(rs.getString("website")))
-					insertAuditEntry(author, "Website changed from " + rs.getInt("website") + " to " + author.getWebField());
+					insertAuditEntry(author, "Website changed from " + rs.getString("website") + " to " + author.getWebField());
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
@@ -255,9 +257,9 @@ public class AuthorGateway {
 		try {
 			st =  connection.prepareStatement("select a.id as audit_id, a.date_added, a.entry_msg, b.id as authid, b.first_name, b.last_name"
 					+ " from author_audit_trail a inner join Author b on a.author_id = b.id"
-					+ " where b.first_name = ?, b.last_name = ?");
-			st.setString(1, author.getFirstName());
-			st.setString(2, author.getLastName());
+					+ " where b.last_name like ?");
+			st.setString(1, author.getLastName());
+			//st.setString(2, author.getLastName());
 			ResultSet rs = st.executeQuery();
 			while(rs.next()) {
 				Timestamp date = rs.getTimestamp("date_added");

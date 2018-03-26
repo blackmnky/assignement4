@@ -276,3 +276,296 @@
 17:09:22.224 INFO  Controller.MenuController : calling exit
 17:09:22.235 INFO  Model.MenuLauncher : calling stop
 17:09:22.238 INFO  Model.MenuLauncher : closed connection
+19:15:09.873 INFO  Model.MenuLauncher : calling init
+19:15:11.523 INFO  Model.MenuLauncher : made connection
+19:15:11.559 INFO  Model.MenuLauncher : calling start
+19:15:11.902 INFO  Controller.MenuController : calling initialize
+19:15:15.438 INFO  Controller.MenuController : bookListClicked
+19:15:15.439 INFO  Controller.MenuController : changeViews
+19:15:15.453 INFO  Database.BookGateway : fetching books
+19:15:15.495 INFO  Book.Book : calling book
+19:15:15.497 INFO  Book.Book : calling book
+19:15:15.502 INFO  Book.Book : calling book
+19:15:15.502 INFO  Book.Book : calling book
+19:15:15.503 INFO  Book.Book : calling book
+19:15:15.504 INFO  Book.Book : calling book
+19:15:15.505 INFO  Book.Book : calling book
+19:15:15.506 INFO  Book.Book : calling book
+19:15:15.507 INFO  Book.Book : calling book
+19:15:15.508 INFO  Book.Book : calling book
+19:15:15.564 INFO  Controller.BookListController : calling initialize
+19:15:17.382 INFO  Controller.MenuController : author List clicked
+19:15:17.390 INFO  Controller.MenuController : changeViews
+19:15:17.414 INFO  Controller.AuthorListController : calling initialize
+19:15:18.257 INFO  Controller.AuthorListController : Mouse Clicked
+19:15:18.433 INFO  Controller.AuthorListController : Mouse Clicked
+19:15:18.434 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		2002-08-29clicked
+19:15:18.435 INFO  Controller.MenuController : changeViews
+19:15:18.542 INFO  Controller.AuthorDetailController : calling initialize()
+19:15:18.544 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		2002-08-29
+19:15:23.993 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:15:24.002 INFO  Controller.MenuController : changeViews
+19:15:24.059 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 hotTotrot		2002-08-29
+19:15:25.706 INFO  Controller.AuditTrailController : back button clicked
+19:15:25.707 INFO  Controller.MenuController : changeViews
+19:15:25.782 INFO  Controller.AuthorDetailController : calling initialize()
+19:15:25.783 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		2002-08-29
+19:15:34.190 INFO  Controller.AuthorDetailController : calling onSave
+19:15:34.191 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:15:34.192 INFO  Book.Author : calling Author.save()
+19:15:34.193 INFO  Book.Author : calling update()
+19:15:34.193 INFO  Book.Author : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:15:34.194 INFO  Database.AuthorGateway : calling updateAuthor
+19:15:34.194 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:15:34.239 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:15:34.246 INFO  Controller.MenuController : changeViews
+19:15:34.264 INFO  Controller.AuthorListController : calling initialize
+19:15:35.272 INFO  Controller.AuthorListController : Mouse Clicked
+19:15:35.432 INFO  Controller.AuthorListController : Mouse Clicked
+19:15:35.432 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		1989-08-09clicked
+19:15:35.433 INFO  Controller.MenuController : changeViews
+19:15:35.468 INFO  Controller.AuthorDetailController : calling initialize()
+19:15:35.469 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:15:36.349 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:15:36.349 INFO  Controller.MenuController : changeViews
+19:15:36.350 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 hotTotrot		1989-08-09
+19:15:38.569 INFO  Controller.AuditTrailController : back button clicked
+19:15:38.569 INFO  Controller.MenuController : changeViews
+19:15:38.611 INFO  Controller.AuthorDetailController : calling initialize()
+19:15:38.612 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:15:39.890 INFO  Controller.MenuController : exitClicked
+19:15:39.891 INFO  Controller.MenuController : calling exit
+19:15:39.933 INFO  Model.MenuLauncher : calling stop
+19:15:39.937 INFO  Model.MenuLauncher : closed connection
+19:16:54.594 INFO  Model.MenuLauncher : calling init
+19:16:55.121 INFO  Model.MenuLauncher : made connection
+19:16:55.178 INFO  Model.MenuLauncher : calling start
+19:16:55.534 INFO  Controller.MenuController : calling initialize
+19:16:58.524 INFO  Controller.MenuController : author List clicked
+19:16:58.525 INFO  Controller.MenuController : changeViews
+19:16:58.600 INFO  Controller.AuthorListController : calling initialize
+19:17:00.316 INFO  Controller.AuthorListController : Mouse Clicked
+19:17:00.477 INFO  Controller.AuthorListController : Mouse Clicked
+19:17:00.477 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		1989-08-09clicked
+19:17:00.478 INFO  Controller.MenuController : changeViews
+19:17:00.597 INFO  Controller.AuthorDetailController : calling initialize()
+19:17:00.599 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:17:03.485 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:17:03.486 INFO  Controller.MenuController : changeViews
+19:17:03.539 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 hotTotrot		1989-08-09
+19:17:06.336 INFO  Model.MenuLauncher : calling stop
+19:17:06.339 INFO  Model.MenuLauncher : closed connection
+19:19:14.542 INFO  Model.MenuLauncher : calling init
+19:19:15.064 INFO  Model.MenuLauncher : made connection
+19:19:15.105 INFO  Model.MenuLauncher : calling start
+19:19:15.412 INFO  Controller.MenuController : calling initialize
+19:19:19.304 INFO  Controller.MenuController : author List clicked
+19:19:19.304 INFO  Controller.MenuController : changeViews
+19:19:19.384 INFO  Controller.AuthorListController : calling initialize
+19:19:20.849 INFO  Controller.AuthorListController : Mouse Clicked
+19:19:21.010 INFO  Controller.AuthorListController : Mouse Clicked
+19:19:21.011 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		1989-08-09clicked
+19:19:21.012 INFO  Controller.MenuController : changeViews
+19:19:21.131 INFO  Controller.AuthorDetailController : calling initialize()
+19:19:21.133 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:19:24.843 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:19:24.852 INFO  Controller.MenuController : changeViews
+19:19:24.895 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 hotTotrot		1989-08-09
+19:19:27.822 INFO  Model.MenuLauncher : calling stop
+19:19:27.827 INFO  Model.MenuLauncher : closed connection
+19:20:03.961 INFO  Model.MenuLauncher : calling init
+19:20:04.430 INFO  Model.MenuLauncher : made connection
+19:20:04.462 INFO  Model.MenuLauncher : calling start
+19:20:04.650 INFO  Controller.MenuController : calling initialize
+19:20:07.604 INFO  Controller.MenuController : author List clicked
+19:20:07.605 INFO  Controller.MenuController : changeViews
+19:20:07.669 INFO  Controller.AuthorListController : calling initialize
+19:20:09.669 INFO  Controller.AuthorListController : Mouse Clicked
+19:20:09.842 INFO  Controller.AuthorListController : Mouse Clicked
+19:20:09.843 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		1989-08-09clicked
+19:20:09.844 INFO  Controller.MenuController : changeViews
+19:20:09.940 INFO  Controller.AuthorDetailController : calling initialize()
+19:20:09.942 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:20:13.799 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:20:13.808 INFO  Controller.MenuController : changeViews
+19:20:13.834 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 hotTotrot		1989-08-09
+19:20:16.773 INFO  Model.MenuLauncher : calling stop
+19:20:16.778 INFO  Model.MenuLauncher : closed connection
+19:20:34.055 INFO  Model.MenuLauncher : calling init
+19:20:34.492 INFO  Model.MenuLauncher : made connection
+19:20:34.526 INFO  Model.MenuLauncher : calling start
+19:20:34.708 INFO  Controller.MenuController : calling initialize
+19:20:37.523 INFO  Model.MenuLauncher : calling stop
+19:20:37.528 INFO  Model.MenuLauncher : closed connection
+19:20:45.044 INFO  Model.MenuLauncher : calling init
+19:20:45.458 INFO  Model.MenuLauncher : made connection
+19:20:45.477 INFO  Model.MenuLauncher : calling start
+19:20:45.642 INFO  Controller.MenuController : calling initialize
+19:20:49.079 INFO  Controller.MenuController : author List clicked
+19:20:49.079 INFO  Controller.MenuController : changeViews
+19:20:49.148 INFO  Controller.AuthorListController : calling initialize
+19:20:49.956 INFO  Controller.AuthorListController : Mouse Clicked
+19:20:50.109 INFO  Controller.AuthorListController : Mouse Clicked
+19:20:50.109 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		1989-08-09clicked
+19:20:50.110 INFO  Controller.MenuController : changeViews
+19:20:50.202 INFO  Controller.AuthorDetailController : calling initialize()
+19:20:50.204 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:20:53.621 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:20:53.631 INFO  Controller.MenuController : changeViews
+19:20:53.665 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 hotTotrot		1989-08-09
+19:20:57.976 INFO  Controller.AuditTrailController : back button clicked
+19:20:57.977 INFO  Controller.MenuController : changeViews
+19:20:58.023 INFO  Controller.AuthorDetailController : calling initialize()
+19:20:58.023 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:20:59.683 INFO  Controller.AuthorDetailController : back button clicked
+19:20:59.683 INFO  Controller.MenuController : changeViews
+19:20:59.695 INFO  Controller.AuthorListController : calling initialize
+19:21:01.473 INFO  Controller.MenuController : exitClicked
+19:21:01.474 INFO  Controller.MenuController : calling exit
+19:21:01.489 INFO  Model.MenuLauncher : calling stop
+19:21:01.493 INFO  Model.MenuLauncher : closed connection
+19:25:54.789 INFO  Model.MenuLauncher : calling init
+19:25:55.779 INFO  Model.MenuLauncher : made connection
+19:25:55.837 INFO  Model.MenuLauncher : calling start
+19:25:56.150 INFO  Controller.MenuController : calling initialize
+19:25:59.479 INFO  Controller.MenuController : author List clicked
+19:25:59.480 INFO  Controller.MenuController : changeViews
+19:25:59.554 INFO  Controller.AuthorListController : calling initialize
+19:26:00.311 INFO  Controller.AuthorListController : Mouse Clicked
+19:26:00.471 INFO  Controller.AuthorListController : Mouse Clicked
+19:26:00.472 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		1989-08-09clicked
+19:26:00.473 INFO  Controller.MenuController : changeViews
+19:26:00.581 INFO  Controller.AuthorDetailController : calling initialize()
+19:26:00.582 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1989-08-09
+19:26:07.866 INFO  Controller.AuthorDetailController : calling onSave
+19:26:07.875 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1986-08-14
+19:26:07.876 INFO  Book.Author : calling Author.save()
+19:26:07.877 INFO  Book.Author : calling update()
+19:26:07.878 INFO  Book.Author : David	  Jupiter		 M		 hotTotrot		1986-08-14
+19:26:07.878 INFO  Database.AuthorGateway : calling updateAuthor
+19:26:07.879 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:26:07.923 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:26:07.929 INFO  Database.AuthorGateway : gatewar inserting audit trail
+19:26:07.935 INFO  Controller.MenuController : changeViews
+19:26:07.948 INFO  Controller.AuthorListController : calling initialize
+19:26:09.197 INFO  Controller.AuthorListController : Mouse Clicked
+19:26:09.348 INFO  Controller.AuthorListController : Mouse Clicked
+19:26:09.348 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		1986-08-14clicked
+19:26:09.349 INFO  Controller.MenuController : changeViews
+19:26:09.390 INFO  Controller.AuthorDetailController : calling initialize()
+19:26:09.390 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1986-08-14
+19:26:10.357 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:26:10.358 INFO  Controller.MenuController : changeViews
+19:26:10.409 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 hotTotrot		1986-08-14
+19:26:11.876 INFO  Controller.AuditTrailController : back button clicked
+19:26:11.876 INFO  Controller.MenuController : changeViews
+19:26:11.909 INFO  Controller.AuthorDetailController : calling initialize()
+19:26:11.910 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1986-08-14
+19:26:13.466 INFO  Controller.MenuController : exitClicked
+19:26:13.466 INFO  Controller.MenuController : calling exit
+19:26:13.480 INFO  Model.MenuLauncher : calling stop
+19:26:13.483 INFO  Model.MenuLauncher : closed connection
+19:28:13.073 INFO  Model.MenuLauncher : calling init
+19:28:13.576 INFO  Model.MenuLauncher : made connection
+19:28:13.616 INFO  Model.MenuLauncher : calling start
+19:28:13.931 INFO  Controller.MenuController : calling initialize
+19:28:17.179 INFO  Controller.MenuController : author List clicked
+19:28:17.179 INFO  Controller.MenuController : changeViews
+19:28:17.520 INFO  Controller.AuthorListController : calling initialize
+19:28:18.740 INFO  Controller.AuthorListController : Mouse Clicked
+19:28:18.905 INFO  Controller.AuthorListController : Mouse Clicked
+19:28:18.906 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 hotTotrot		1986-08-14clicked
+19:28:18.907 INFO  Controller.MenuController : changeViews
+19:28:19.021 INFO  Controller.AuthorDetailController : calling initialize()
+19:28:19.023 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 hotTotrot		1986-08-14
+19:28:30.428 INFO  Controller.AuthorDetailController : calling onSave
+19:28:30.437 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:28:30.452 INFO  Book.Author : calling Author.save()
+19:28:30.453 INFO  Book.Author : calling update()
+19:28:30.453 INFO  Book.Author : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:28:30.453 INFO  Database.AuthorGateway : calling updateAuthor
+19:28:30.454 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:28:30.502 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:28:30.510 INFO  Database.AuthorGateway : gatewar inserting audit trail
+19:28:30.515 INFO  Controller.MenuController : changeViews
+19:28:30.526 INFO  Controller.AuthorListController : calling initialize
+19:28:34.642 INFO  Controller.AuthorListController : Mouse Clicked
+19:28:34.786 INFO  Controller.AuthorListController : Mouse Clicked
+19:28:34.787 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 losingandwinning		1986-08-14clicked
+19:28:34.787 INFO  Controller.MenuController : changeViews
+19:28:34.829 INFO  Controller.AuthorDetailController : calling initialize()
+19:28:34.830 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:28:39.437 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:28:39.446 INFO  Controller.MenuController : changeViews
+19:28:39.482 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 losingandwinning		1986-08-14
+19:28:41.619 INFO  Model.MenuLauncher : calling stop
+19:28:41.624 INFO  Model.MenuLauncher : closed connection
+19:29:25.519 INFO  Model.MenuLauncher : calling init
+19:29:26.004 INFO  Model.MenuLauncher : made connection
+19:29:26.041 INFO  Model.MenuLauncher : calling start
+19:29:26.221 INFO  Controller.MenuController : calling initialize
+19:29:29.274 INFO  Controller.MenuController : author List clicked
+19:29:29.275 INFO  Controller.MenuController : changeViews
+19:29:29.340 INFO  Controller.AuthorListController : calling initialize
+19:29:30.154 INFO  Controller.AuthorListController : Mouse Clicked
+19:29:30.327 INFO  Controller.AuthorListController : Mouse Clicked
+19:29:30.328 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 losingandwinning		1986-08-14clicked
+19:29:30.329 INFO  Controller.MenuController : changeViews
+19:29:30.426 INFO  Controller.AuthorDetailController : calling initialize()
+19:29:30.428 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:29:46.089 INFO  Controller.AuthorDetailController : calling onSave
+19:29:46.089 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 waterandwhiskey		1986-08-14
+19:29:46.100 INFO  Book.Author : calling Author.save()
+19:29:46.100 INFO  Book.Author : calling update()
+19:29:46.101 INFO  Book.Author : David	  Jupiter		 M		 waterandwhiskey		1986-08-14
+19:29:46.101 INFO  Database.AuthorGateway : calling updateAuthor
+19:29:46.102 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:29:46.108 INFO  Database.AuthorGateway : gatewar inserting audit trail
+19:29:46.143 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:29:46.156 INFO  Controller.MenuController : changeViews
+19:29:46.168 INFO  Controller.AuthorListController : calling initialize
+19:29:49.185 INFO  Model.MenuLauncher : calling stop
+19:29:49.190 INFO  Model.MenuLauncher : closed connection
+19:30:20.493 INFO  Model.MenuLauncher : calling init
+19:30:21.000 INFO  Model.MenuLauncher : made connection
+19:30:21.021 INFO  Model.MenuLauncher : calling start
+19:30:21.198 INFO  Controller.MenuController : calling initialize
+19:30:24.009 INFO  Controller.MenuController : author List clicked
+19:30:24.010 INFO  Controller.MenuController : changeViews
+19:30:24.061 INFO  Controller.AuthorListController : calling initialize
+19:30:25.018 INFO  Controller.AuthorListController : Mouse Clicked
+19:30:25.198 INFO  Controller.AuthorListController : Mouse Clicked
+19:30:25.199 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 waterandwhiskey		1986-08-14clicked
+19:30:25.200 INFO  Controller.MenuController : changeViews
+19:30:25.281 INFO  Controller.AuthorDetailController : calling initialize()
+19:30:25.282 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 waterandwhiskey		1986-08-14
+19:30:31.664 INFO  Controller.AuthorDetailController : calling onSave
+19:30:31.665 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:30:31.676 INFO  Book.Author : calling Author.save()
+19:30:31.676 INFO  Book.Author : calling update()
+19:30:31.676 INFO  Book.Author : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:30:31.677 INFO  Database.AuthorGateway : calling updateAuthor
+19:30:31.677 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:30:31.684 INFO  Database.AuthorGateway : gatewar inserting audit trail
+19:30:31.691 INFO  Database.AuthorGateway : gateway inserting audit entry
+19:30:31.758 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+19:30:31.764 INFO  Controller.MenuController : changeViews
+19:30:31.778 INFO  Controller.AuthorListController : calling initialize
+19:30:32.954 INFO  Controller.AuthorListController : Mouse Clicked
+19:30:33.106 INFO  Controller.AuthorListController : Mouse Clicked
+19:30:33.106 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 losingandwinning		1986-08-14clicked
+19:30:33.107 INFO  Controller.MenuController : changeViews
+19:30:33.154 INFO  Controller.AuthorDetailController : calling initialize()
+19:30:33.155 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:30:36.987 INFO  Controller.AuthorDetailController : audit trail for author clicked
+19:30:36.988 INFO  Controller.MenuController : changeViews
+19:30:37.021 INFO  Database.AuthorGateway : fetching audit trail ofDavid	  Jupiter		 M		 losingandwinning		1986-08-14
+19:30:37.030 INFO  Book.AuditTrailEntry : auditTrailEntry constructor
+19:30:41.037 INFO  Controller.AuditTrailController : back button clicked
+19:30:41.038 INFO  Controller.MenuController : changeViews
+19:30:41.064 INFO  Controller.AuthorDetailController : calling initialize()
+19:30:41.064 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:30:43.064 INFO  Controller.MenuController : exitClicked
+19:30:43.065 INFO  Controller.MenuController : calling exit
+19:30:43.069 INFO  Model.MenuLauncher : calling stop
+19:30:43.073 INFO  Model.MenuLauncher : closed connection
