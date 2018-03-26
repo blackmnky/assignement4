@@ -1,6 +1,11 @@
 package Book;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class AuthorBook {
+	private static Logger logger = LogManager.getLogger();
+
 	private Author author;
 	private Book book;
 	private int royalty; //multiple by 100000
@@ -13,6 +18,7 @@ public class AuthorBook {
 	}
 	
 	public AuthorBook() {
+		logger.info("new AuthorBook");
 		author = new Author();
 		book = new Book();
 		royalty = -1; //init to -1 

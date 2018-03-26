@@ -107,6 +107,7 @@ public class Book {
 	}
 	
 	public ObservableList<AuthorBook> getAuthors() {
+		logger.info("getAuthors in Book");
 		ObservableList<AuthorBook> authors = gateway.getAuthorsForBook(this);
 		return authors;
 	}

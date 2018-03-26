@@ -294,6 +294,7 @@ public class BookGateway {
 	}
 	
 	public ObservableList<AuthorBook> getAuthorsForBook(Book book){
+		logger.info("getAuthorsForBook");
 		ObservableList<AuthorBook> authors = FXCollections.observableArrayList();
 		PreparedStatement st = null;
 		try {
