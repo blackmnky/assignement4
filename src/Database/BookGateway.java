@@ -9,11 +9,14 @@ import java.sql.Statement;
 import java.sql.Timestamp;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import Book.AuditTrailEntry;
+import Book.Author;
+import Book.AuthorBook;
 import Book.Book;
 import Book.Publisher;
 import javafx.collections.FXCollections;
@@ -288,5 +291,37 @@ public class BookGateway {
 			}
 		}
 		return trail;
+	}
+	
+	public ObservableList<AuthorBook> getAuthorsForBook(Book book){
+		ObservableList<AuthorBook> authors = FXCollections.observableArrayList();
+		PreparedStatement st = null;
+		try {
+			st = connection.prepareStatement("select a.id as auth_id, a.first_name, a.last_name, a.dob, a.gender, a.website, a.last_modified,"
+					+ " b.author_id as b_id, b.book_id from Author a inner join author_book b on a.id = b.author_id "
+					+ "where book_id = ?");
+			st.setInt(1, book.getId());
+			ResultSet rs = st.executeQuery();
+			while(rs.next()) {
+				int auth_id = rs.getInt("author_id");
+				int royal = rs.getInt("royalty");
+				String first = rs.getString("first_name");
+				String last = rs.getString("last_name");
+				String gender = rs.getString("gender");
+				String web = rs.getString("website");
+				Date dob = rs.getDate("dob");
+				LocalDate dOB = dob.toLocalDate();
+				LocalDateTime time = rs.getTimestamp("last_modified").toLocalDateTime();
+				Author auth = new Author(first, last, web, gender, dOB);
+				auth.setLast_modified(time);
+				auth.setId(auth_id);
+				AuthorBook tmp = new AuthorBook(auth, book, royal);
+				tmp.setNewRecord(false);
+				authors.add(tmp);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}		
+		return authors;
 	}
 }

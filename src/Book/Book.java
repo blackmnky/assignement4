@@ -11,6 +11,7 @@ import Database.BookGateway;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.ObservableList;
 
 public class Book {
 	private static Logger logger = LogManager.getLogger();
@@ -103,6 +104,11 @@ public class Book {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public ObservableList<AuthorBook> getAuthors() {
+		ObservableList<AuthorBook> authors = gateway.getAuthorsForBook(this);
+		return authors;
 	}
 	
 	/*
