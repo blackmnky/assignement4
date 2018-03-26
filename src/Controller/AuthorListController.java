@@ -59,7 +59,7 @@ public class AuthorListController implements Initializable, MyController {
 			}
 		}
     }
-
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		logger.info("calling initialize");

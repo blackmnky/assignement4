@@ -37,7 +37,7 @@ public class MenuLauncher extends Application {
 		Parent rootNode = loader.load();
 		controller.setRootNode((BorderPane) rootNode);
 
-		Scene scene = new Scene(rootNode, 600, 400);
+		Scene scene = new Scene(rootNode, 600, 500);
 		stage.setTitle("Assignment4");
 		stage.setScene(scene);
 		stage.show();

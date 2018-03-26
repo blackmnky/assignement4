@@ -569,3 +569,384 @@
 19:30:43.065 INFO  Controller.MenuController : calling exit
 19:30:43.069 INFO  Model.MenuLauncher : calling stop
 19:30:43.073 INFO  Model.MenuLauncher : closed connection
+19:34:43.871 INFO  Model.MenuLauncher : calling init
+19:34:44.398 INFO  Model.MenuLauncher : made connection
+19:34:44.436 INFO  Model.MenuLauncher : calling start
+19:34:44.725 INFO  Controller.MenuController : calling initialize
+19:34:47.656 INFO  Controller.MenuController : bookListClicked
+19:34:47.657 INFO  Controller.MenuController : changeViews
+19:34:47.661 INFO  Database.BookGateway : fetching books
+19:34:47.690 INFO  Book.Book : calling book
+19:34:47.692 INFO  Book.Book : calling book
+19:34:47.696 INFO  Book.Book : calling book
+19:34:47.696 INFO  Book.Book : calling book
+19:34:47.697 INFO  Book.Book : calling book
+19:34:47.698 INFO  Book.Book : calling book
+19:34:47.698 INFO  Book.Book : calling book
+19:34:47.700 INFO  Book.Book : calling book
+19:34:47.700 INFO  Book.Book : calling book
+19:34:47.701 INFO  Book.Book : calling book
+19:34:47.755 INFO  Controller.BookListController : calling initialize
+19:34:54.715 INFO  Controller.MenuController : exitClicked
+19:34:54.724 INFO  Controller.MenuController : calling exit
+19:34:54.742 INFO  Model.MenuLauncher : calling stop
+19:34:54.747 INFO  Model.MenuLauncher : closed connection
+19:38:54.662 INFO  Model.MenuLauncher : calling init
+19:38:55.209 INFO  Model.MenuLauncher : made connection
+19:38:55.241 INFO  Model.MenuLauncher : calling start
+19:38:55.537 INFO  Controller.MenuController : calling initialize
+19:38:59.097 INFO  Controller.MenuController : author List clicked
+19:38:59.098 INFO  Controller.MenuController : changeViews
+19:39:01.249 INFO  Controller.MenuController : bookListClicked
+19:39:01.250 INFO  Controller.MenuController : changeViews
+19:39:01.264 INFO  Database.BookGateway : fetching books
+19:39:01.280 INFO  Book.Book : calling book
+19:39:01.281 INFO  Book.Book : calling book
+19:39:01.282 INFO  Book.Book : calling book
+19:39:01.283 INFO  Book.Book : calling book
+19:39:01.283 INFO  Book.Book : calling book
+19:39:01.284 INFO  Book.Book : calling book
+19:39:01.285 INFO  Book.Book : calling book
+19:39:01.285 INFO  Book.Book : calling book
+19:39:01.286 INFO  Book.Book : calling book
+19:39:01.287 INFO  Book.Book : calling book
+19:39:01.319 INFO  Controller.BookListController : calling initialize
+19:39:05.054 INFO  Controller.MenuController : author List clicked
+19:39:05.055 INFO  Controller.MenuController : changeViews
+19:39:07.022 INFO  Controller.MenuController : exitClicked
+19:39:07.023 INFO  Controller.MenuController : calling exit
+19:39:07.034 INFO  Model.MenuLauncher : calling stop
+19:39:07.037 INFO  Model.MenuLauncher : closed connection
+19:39:25.007 INFO  Model.MenuLauncher : calling init
+19:39:25.527 INFO  Model.MenuLauncher : made connection
+19:39:25.566 INFO  Model.MenuLauncher : calling start
+19:39:25.877 INFO  Controller.MenuController : calling initialize
+19:39:29.090 INFO  Controller.MenuController : author List clicked
+19:39:29.091 INFO  Controller.MenuController : changeViews
+19:39:29.163 INFO  Controller.AuthorListController : calling initialize
+19:39:31.791 INFO  Controller.AuthorListController : Mouse Clicked
+19:39:31.957 INFO  Controller.AuthorListController : Mouse Clicked
+19:39:31.957 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 losingandwinning		1986-08-14clicked
+19:39:31.958 INFO  Controller.MenuController : changeViews
+19:39:32.072 INFO  Controller.AuthorDetailController : calling initialize()
+19:39:32.074 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:39:37.784 INFO  Controller.AuthorDetailController : back button clicked
+19:39:37.785 INFO  Controller.MenuController : changeViews
+19:39:37.806 INFO  Controller.AuthorListController : calling initialize
+19:39:39.878 INFO  Controller.MenuController : bookListClicked
+19:39:39.887 INFO  Controller.MenuController : changeViews
+19:39:39.893 INFO  Database.BookGateway : fetching books
+19:39:39.904 INFO  Book.Book : calling book
+19:39:39.905 INFO  Book.Book : calling book
+19:39:39.906 INFO  Book.Book : calling book
+19:39:39.906 INFO  Book.Book : calling book
+19:39:39.907 INFO  Book.Book : calling book
+19:39:39.907 INFO  Book.Book : calling book
+19:39:39.907 INFO  Book.Book : calling book
+19:39:39.908 INFO  Book.Book : calling book
+19:39:39.908 INFO  Book.Book : calling book
+19:39:39.909 INFO  Book.Book : calling book
+19:39:39.923 INFO  Controller.BookListController : calling initialize
+19:39:42.054 INFO  Controller.MenuController : Add Book Clicked
+19:39:42.055 INFO  Book.Book : calling book
+19:39:42.055 INFO  Controller.MenuController : changeViews
+19:39:42.067 INFO  Database.PublisherGateway : fetching publishers
+19:39:42.384 INFO  Controller.BookDetailController : bookdetailcontroller init
+19:39:45.331 INFO  Controller.MenuController : author List clicked
+19:39:45.332 INFO  Controller.MenuController : changeViews
+19:39:45.345 INFO  Controller.AuthorListController : calling initialize
+19:39:47.022 INFO  Controller.AuthorListController : Mouse Clicked
+19:39:47.174 INFO  Controller.AuthorListController : Mouse Clicked
+19:39:47.175 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 losingandwinning		1986-08-14clicked
+19:39:47.175 INFO  Controller.MenuController : changeViews
+19:39:47.217 INFO  Controller.AuthorDetailController : calling initialize()
+19:39:47.217 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:39:56.625 INFO  Controller.MenuController : author List clicked
+19:39:56.633 INFO  Controller.MenuController : changeViews
+19:39:56.646 INFO  Controller.AuthorListController : calling initialize
+19:39:58.301 INFO  Controller.MenuController : bookListClicked
+19:39:58.302 INFO  Controller.MenuController : changeViews
+19:39:58.302 INFO  Database.BookGateway : fetching books
+19:39:58.309 INFO  Book.Book : calling book
+19:39:58.310 INFO  Book.Book : calling book
+19:39:58.311 INFO  Book.Book : calling book
+19:39:58.312 INFO  Book.Book : calling book
+19:39:58.312 INFO  Book.Book : calling book
+19:39:58.313 INFO  Book.Book : calling book
+19:39:58.314 INFO  Book.Book : calling book
+19:39:58.315 INFO  Book.Book : calling book
+19:39:58.316 INFO  Book.Book : calling book
+19:39:58.316 INFO  Book.Book : calling book
+19:39:58.333 INFO  Controller.BookListController : calling initialize
+19:40:01.460 INFO  Controller.MenuController : exitClicked
+19:40:01.461 INFO  Controller.MenuController : calling exit
+19:40:01.466 INFO  Model.MenuLauncher : calling stop
+19:40:01.470 INFO  Model.MenuLauncher : closed connection
+19:45:55.937 INFO  Model.MenuLauncher : calling init
+19:45:56.520 INFO  Model.MenuLauncher : made connection
+19:45:56.563 INFO  Model.MenuLauncher : calling start
+19:45:56.863 INFO  Controller.MenuController : calling initialize
+19:46:00.079 INFO  Controller.MenuController : author List clicked
+19:46:00.079 INFO  Controller.MenuController : changeViews
+19:46:00.155 INFO  Controller.AuthorListController : calling initialize
+19:46:03.461 INFO  Controller.AuthorListController : Mouse Clicked
+19:46:03.627 INFO  Controller.AuthorListController : Mouse Clicked
+19:46:03.628 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 losingandwinning		1986-08-14clicked
+19:46:03.629 INFO  Controller.MenuController : changeViews
+19:46:03.744 INFO  Controller.AuthorDetailController : calling initialize()
+19:46:03.746 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:46:07.645 INFO  Controller.MenuController : exitClicked
+19:46:07.646 INFO  Controller.MenuController : calling exit
+19:46:07.649 INFO  Model.MenuLauncher : calling stop
+19:46:07.652 INFO  Model.MenuLauncher : closed connection
+19:48:43.385 INFO  Model.MenuLauncher : calling init
+19:48:43.909 INFO  Model.MenuLauncher : made connection
+19:48:43.951 INFO  Model.MenuLauncher : calling start
+19:48:44.268 INFO  Controller.MenuController : calling initialize
+19:48:48.713 INFO  Controller.MenuController : author List clicked
+19:48:48.714 INFO  Controller.MenuController : changeViews
+19:48:48.790 INFO  Controller.AuthorListController : calling initialize
+19:48:52.891 INFO  Controller.AuthorListController : Mouse Clicked
+19:48:53.048 INFO  Controller.AuthorListController : Mouse Clicked
+19:48:53.049 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 losingandwinning		1986-08-14clicked
+19:48:53.049 INFO  Controller.MenuController : changeViews
+19:48:53.151 INFO  Controller.AuthorDetailController : calling initialize()
+19:48:53.153 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+19:48:56.087 INFO  Controller.MenuController : bookListClicked
+19:48:56.090 INFO  Controller.MenuController : changeViews
+19:48:56.096 INFO  Database.BookGateway : fetching books
+19:48:56.116 INFO  Book.Book : calling book
+19:48:56.118 INFO  Book.Book : calling book
+19:48:56.119 INFO  Book.Book : calling book
+19:48:56.120 INFO  Book.Book : calling book
+19:48:56.120 INFO  Book.Book : calling book
+19:48:56.121 INFO  Book.Book : calling book
+19:48:56.122 INFO  Book.Book : calling book
+19:48:56.122 INFO  Book.Book : calling book
+19:48:56.123 INFO  Book.Book : calling book
+19:48:56.123 INFO  Book.Book : calling book
+19:48:56.136 INFO  Controller.BookListController : calling initialize
+19:48:57.726 INFO  Controller.MenuController : Add Book Clicked
+19:48:57.727 INFO  Book.Book : calling book
+19:48:57.727 INFO  Controller.MenuController : changeViews
+19:48:57.731 INFO  Database.PublisherGateway : fetching publishers
+19:48:57.805 INFO  Controller.BookDetailController : bookdetailcontroller init
+19:49:00.883 INFO  Controller.MenuController : about button clicked
+19:49:00.884 INFO  Controller.MenuController : changeViews
+19:49:00.904 INFO  Controller.MenuController : calling initialize
+19:49:03.315 INFO  Controller.MenuController : exitClicked
+19:49:03.316 INFO  Controller.MenuController : calling exit
+19:49:03.319 INFO  Model.MenuLauncher : calling stop
+19:49:03.322 INFO  Model.MenuLauncher : closed connection
+19:51:59.907 INFO  Model.MenuLauncher : calling init
+19:52:00.414 INFO  Model.MenuLauncher : made connection
+19:52:00.451 INFO  Model.MenuLauncher : calling start
+19:52:00.774 INFO  Controller.MenuController : calling initialize
+19:52:07.628 INFO  Controller.MenuController : bookListClicked
+19:52:07.628 INFO  Controller.MenuController : changeViews
+19:52:07.642 INFO  Database.BookGateway : fetching books
+19:52:07.674 INFO  Book.Book : calling book
+19:52:07.675 INFO  Book.Book : calling book
+19:52:07.679 INFO  Book.Book : calling book
+19:52:07.680 INFO  Book.Book : calling book
+19:52:07.681 INFO  Book.Book : calling book
+19:52:07.682 INFO  Book.Book : calling book
+19:52:07.683 INFO  Book.Book : calling book
+19:52:07.683 INFO  Book.Book : calling book
+19:52:07.684 INFO  Book.Book : calling book
+19:52:07.685 INFO  Book.Book : calling book
+19:52:07.739 INFO  Controller.BookListController : calling initialize
+19:52:15.067 INFO  Controller.MenuController : author List clicked
+19:52:15.068 INFO  Controller.MenuController : changeViews
+19:52:15.101 INFO  Controller.AuthorListController : calling initialize
+19:52:22.650 INFO  Controller.MenuController : exitClicked
+19:52:22.651 INFO  Controller.MenuController : calling exit
+19:52:22.655 INFO  Model.MenuLauncher : calling stop
+19:52:22.658 INFO  Model.MenuLauncher : closed connection
+22:21:05.572 INFO  Model.MenuLauncher : calling init
+22:21:06.673 INFO  Model.MenuLauncher : made connection
+22:21:06.723 INFO  Model.MenuLauncher : calling start
+22:21:07.027 INFO  Controller.MenuController : calling initialize
+22:21:11.322 INFO  Controller.MenuController : author List clicked
+22:21:11.323 INFO  Controller.MenuController : changeViews
+22:21:11.426 INFO  Controller.AuthorListController : calling initialize
+22:21:13.335 INFO  Controller.MenuController : bookListClicked
+22:21:13.348 INFO  Controller.MenuController : changeViews
+22:21:13.355 INFO  Database.BookGateway : fetching books
+22:21:13.397 INFO  Book.Book : calling book
+22:21:13.398 INFO  Book.Book : calling book
+22:21:13.399 INFO  Book.Book : calling book
+22:21:13.400 INFO  Book.Book : calling book
+22:21:13.401 INFO  Book.Book : calling book
+22:21:13.402 INFO  Book.Book : calling book
+22:21:13.403 INFO  Book.Book : calling book
+22:21:13.404 INFO  Book.Book : calling book
+22:21:13.405 INFO  Book.Book : calling book
+22:21:13.405 INFO  Book.Book : calling book
+22:21:13.447 INFO  Controller.BookListController : calling initialize
+22:21:16.456 INFO  Controller.MenuController : Add author clicked
+22:21:16.457 INFO  Controller.MenuController : changeViews
+22:21:16.545 INFO  Controller.AuthorDetailController : calling initialize()
+22:21:16.546 INFO  Controller.AuthorDetailController : 	  		 		 		null
+22:21:18.691 INFO  Controller.MenuController : Add Book Clicked
+22:21:18.691 INFO  Book.Book : calling book
+22:21:18.692 INFO  Controller.MenuController : changeViews
+22:21:18.703 INFO  Database.PublisherGateway : fetching publishers
+22:21:18.779 INFO  Controller.BookDetailController : bookdetailcontroller init
+22:21:21.508 INFO  Controller.MenuController : about button clicked
+22:21:21.509 INFO  Controller.MenuController : changeViews
+22:21:21.520 INFO  Controller.MenuController : calling initialize
+22:21:23.172 INFO  Controller.MenuController : exitClicked
+22:21:23.173 INFO  Controller.MenuController : calling exit
+22:21:23.177 INFO  Model.MenuLauncher : calling stop
+22:21:23.180 INFO  Model.MenuLauncher : closed connection
+22:24:39.751 INFO  Model.MenuLauncher : calling init
+22:24:40.469 INFO  Model.MenuLauncher : made connection
+22:24:40.520 INFO  Model.MenuLauncher : calling start
+22:24:40.838 INFO  Controller.MenuController : calling initialize
+22:24:44.268 INFO  Controller.MenuController : about button clicked
+22:24:44.268 INFO  Controller.MenuController : changeViews
+22:24:44.325 INFO  Controller.MenuController : calling initialize
+22:24:47.025 INFO  Controller.MenuController : exitClicked
+22:24:47.026 INFO  Controller.MenuController : calling exit
+22:24:47.033 INFO  Model.MenuLauncher : calling stop
+22:24:47.037 INFO  Model.MenuLauncher : closed connection
+22:26:55.463 INFO  Model.MenuLauncher : calling init
+22:26:56.115 INFO  Model.MenuLauncher : made connection
+22:26:56.165 INFO  Model.MenuLauncher : calling start
+22:26:56.477 INFO  Controller.MenuController : calling initialize
+22:26:59.628 INFO  Controller.MenuController : about button clicked
+22:26:59.629 INFO  Controller.MenuController : changeViews
+22:26:59.687 INFO  Controller.MenuController : calling initialize
+22:27:02.238 INFO  Controller.MenuController : Button clicked
+22:27:02.238 INFO  Controller.MenuController : changeViews
+22:27:02.252 INFO  Database.BookGateway : fetching books
+22:27:02.327 INFO  Book.Book : calling book
+22:27:02.329 INFO  Book.Book : calling book
+22:27:02.330 INFO  Book.Book : calling book
+22:27:02.331 INFO  Book.Book : calling book
+22:27:02.331 INFO  Book.Book : calling book
+22:27:02.332 INFO  Book.Book : calling book
+22:27:02.332 INFO  Book.Book : calling book
+22:27:02.333 INFO  Book.Book : calling book
+22:27:02.334 INFO  Book.Book : calling book
+22:27:02.334 INFO  Book.Book : calling book
+22:27:02.384 INFO  Controller.BookListController : calling initialize
+22:27:04.891 INFO  Controller.MenuController : exitClicked
+22:27:04.892 INFO  Controller.MenuController : calling exit
+22:27:04.901 INFO  Model.MenuLauncher : calling stop
+22:27:04.904 INFO  Model.MenuLauncher : closed connection
+22:27:49.113 INFO  Model.MenuLauncher : calling init
+22:27:49.770 INFO  Model.MenuLauncher : made connection
+22:27:49.822 INFO  Model.MenuLauncher : calling start
+22:27:50.138 INFO  Controller.MenuController : calling initialize
+22:27:53.286 INFO  Controller.MenuController : about button clicked
+22:27:53.287 INFO  Controller.MenuController : changeViews
+22:27:53.348 INFO  Controller.MenuController : calling initialize
+22:27:56.225 INFO  Model.MenuLauncher : calling stop
+22:27:56.229 INFO  Model.MenuLauncher : closed connection
+22:28:27.830 INFO  Model.MenuLauncher : calling init
+22:28:28.587 INFO  Model.MenuLauncher : made connection
+22:28:28.636 INFO  Model.MenuLauncher : calling start
+22:28:28.966 INFO  Controller.MenuController : calling initialize
+22:28:33.546 INFO  Controller.MenuController : about button clicked
+22:28:33.546 INFO  Controller.MenuController : changeViews
+22:28:33.615 INFO  Controller.MenuController : calling initialize
+22:28:40.076 INFO  Model.MenuLauncher : calling stop
+22:28:40.081 INFO  Model.MenuLauncher : closed connection
+22:29:10.692 INFO  Model.MenuLauncher : calling init
+22:29:11.297 INFO  Model.MenuLauncher : made connection
+22:29:11.329 INFO  Model.MenuLauncher : calling start
+22:29:11.501 INFO  Controller.MenuController : calling initialize
+22:29:14.548 INFO  Controller.MenuController : about button clicked
+22:29:14.548 INFO  Controller.MenuController : changeViews
+22:29:14.593 INFO  Controller.MenuController : calling initialize
+22:29:17.764 INFO  Controller.MenuController : Button clicked
+22:29:17.765 INFO  Controller.MenuController : changeViews
+22:29:17.779 INFO  Database.BookGateway : fetching books
+22:29:17.840 INFO  Book.Book : calling book
+22:29:17.841 INFO  Book.Book : calling book
+22:29:17.842 INFO  Book.Book : calling book
+22:29:17.843 INFO  Book.Book : calling book
+22:29:17.843 INFO  Book.Book : calling book
+22:29:17.844 INFO  Book.Book : calling book
+22:29:17.844 INFO  Book.Book : calling book
+22:29:17.845 INFO  Book.Book : calling book
+22:29:17.846 INFO  Book.Book : calling book
+22:29:17.846 INFO  Book.Book : calling book
+22:29:17.895 INFO  Controller.BookListController : calling initialize
+22:29:21.554 INFO  Controller.MenuController : exitClicked
+22:29:21.563 INFO  Controller.MenuController : calling exit
+22:29:21.576 INFO  Model.MenuLauncher : calling stop
+22:29:21.580 INFO  Model.MenuLauncher : closed connection
+22:29:56.448 INFO  Model.MenuLauncher : calling init
+22:29:57.043 INFO  Model.MenuLauncher : made connection
+22:29:57.069 INFO  Model.MenuLauncher : calling start
+22:29:57.286 INFO  Controller.MenuController : calling initialize
+22:30:00.622 INFO  Controller.MenuController : about button clicked
+22:30:00.623 INFO  Controller.MenuController : changeViews
+22:30:00.655 INFO  Controller.MenuController : calling initialize
+22:30:03.404 INFO  Controller.MenuController : Button clicked
+22:30:03.405 INFO  Controller.MenuController : changeViews
+22:30:03.418 INFO  Database.BookGateway : fetching books
+22:30:03.477 INFO  Book.Book : calling book
+22:30:03.477 INFO  Book.Book : calling book
+22:30:03.478 INFO  Book.Book : calling book
+22:30:03.479 INFO  Book.Book : calling book
+22:30:03.479 INFO  Book.Book : calling book
+22:30:03.480 INFO  Book.Book : calling book
+22:30:03.481 INFO  Book.Book : calling book
+22:30:03.481 INFO  Book.Book : calling book
+22:30:03.482 INFO  Book.Book : calling book
+22:30:03.483 INFO  Book.Book : calling book
+22:30:03.524 INFO  Controller.BookListController : calling initialize
+22:30:04.762 INFO  Model.MenuLauncher : calling stop
+22:30:04.767 INFO  Model.MenuLauncher : closed connection
+22:30:31.703 INFO  Model.MenuLauncher : calling init
+22:30:32.398 INFO  Model.MenuLauncher : made connection
+22:30:32.447 INFO  Model.MenuLauncher : calling start
+22:30:32.771 INFO  Controller.MenuController : calling initialize
+22:30:37.026 INFO  Controller.MenuController : about button clicked
+22:30:37.027 INFO  Controller.MenuController : changeViews
+22:30:37.067 INFO  Controller.MenuController : calling initialize
+22:30:41.554 INFO  Controller.MenuController : Button clicked
+22:30:41.555 INFO  Controller.MenuController : changeViews
+22:30:41.561 INFO  Database.BookGateway : fetching books
+22:30:41.621 INFO  Book.Book : calling book
+22:30:41.622 INFO  Book.Book : calling book
+22:30:41.623 INFO  Book.Book : calling book
+22:30:41.624 INFO  Book.Book : calling book
+22:30:41.625 INFO  Book.Book : calling book
+22:30:41.625 INFO  Book.Book : calling book
+22:30:41.626 INFO  Book.Book : calling book
+22:30:41.627 INFO  Book.Book : calling book
+22:30:41.628 INFO  Book.Book : calling book
+22:30:41.629 INFO  Book.Book : calling book
+22:30:41.670 INFO  Controller.BookListController : calling initialize
+22:30:44.902 INFO  Controller.MenuController : author List clicked
+22:30:44.903 INFO  Controller.MenuController : changeViews
+22:30:44.962 INFO  Controller.AuthorListController : calling initialize
+22:30:45.756 INFO  Controller.AuthorListController : Mouse Clicked
+22:30:45.925 INFO  Controller.AuthorListController : Mouse Clicked
+22:30:45.926 INFO  Controller.AuthorListController : Author David	  Jupiter		 M		 losingandwinning		1986-08-14clicked
+22:30:45.926 INFO  Controller.MenuController : changeViews
+22:30:46.022 INFO  Controller.AuthorDetailController : calling initialize()
+22:30:46.024 INFO  Controller.AuthorDetailController : David	  Jupiter		 M		 losingandwinning		1986-08-14
+22:30:51.126 INFO  Controller.MenuController : bookListClicked
+22:30:51.127 INFO  Controller.MenuController : changeViews
+22:30:51.128 INFO  Database.BookGateway : fetching books
+22:30:51.157 INFO  Book.Book : calling book
+22:30:51.158 INFO  Book.Book : calling book
+22:30:51.159 INFO  Book.Book : calling book
+22:30:51.159 INFO  Book.Book : calling book
+22:30:51.160 INFO  Book.Book : calling book
+22:30:51.162 INFO  Book.Book : calling book
+22:30:51.163 INFO  Book.Book : calling book
+22:30:51.163 INFO  Book.Book : calling book
+22:30:51.164 INFO  Book.Book : calling book
+22:30:51.165 INFO  Book.Book : calling book
+22:30:51.179 INFO  Controller.BookListController : calling initialize
+22:31:11.978 INFO  Controller.MenuController : exitClicked
+22:31:11.987 INFO  Controller.MenuController : calling exit
+22:31:11.995 INFO  Model.MenuLauncher : calling stop
+22:31:11.998 INFO  Model.MenuLauncher : closed connection
