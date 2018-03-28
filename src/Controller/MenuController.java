@@ -192,6 +192,9 @@ public class MenuController implements Initializable, MyController{
 				controller = new AuditTrailController(AuditTrailController.AUTHORTRAIL, new AuthorGateway(connection), (Author)arg);
 				break;
 			case ADDAUTHOR:
+				fxmlFile = this.getClass().getResource("addAuthor.fxml");
+				controller = new AddAuthorController();
+				break;
 				
 			}
 			FXMLLoader loader = new FXMLLoader(fxmlFile);
