@@ -21,8 +21,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.util.converter.NumberStringConverter;
 
@@ -60,9 +63,15 @@ public class BookDetailController implements MyController, Initializable {
     @FXML private Button auditTrailButton;
    
     @FXML private Button backButton;
+    
+    @FXML
+    private TableView<AuthorBook> authorTable;
+    
+    @FXML
+    private TableColumn<AuthorBook, Author> authorField;
 
     @FXML
-    private ListView<AuthorBook> authorList;
+    private TableColumn<AuthorBook, Integer> royaltyField;
 
     @FXML
     private Button addAuthorButton;
@@ -77,11 +86,11 @@ public class BookDetailController implements MyController, Initializable {
     public BookDetailController(Book book, ObservableList<Publisher> publishers, BookGateway gate) {
     		this();
     		
-    		authorList = new ListView<AuthorBook>();
-    		abList = gateway.getAuthorsForBook(this.book);
+    		authorTable = new TableView<AuthorBook>();
     		this.gateway = gate;
 		this.book = book;
 		this.publishers = publishers;
+		abList = gateway.getAuthorsForBook(this.book);
 	}
     
     @FXML
@@ -193,6 +202,10 @@ public class BookDetailController implements MyController, Initializable {
 		summaryField.textProperty().bindBidirectional(book.summaryProperty());
 		isbnField.textProperty().bindBidirectional(book.isbnProperty());
 		yearPublishedField.textProperty().bindBidirectional(book.yearPublishedProperty(), new NumberStringConverter());
-		authorList.setItems(abList);
+		authorField.setCellValueFactory(new PropertyValueFactory("author"));
+		royaltyField.setCellValueFactory(new PropertyValueFactory("royalty"));
+		authorTable.setItems(abList);
+
+
     }
 }

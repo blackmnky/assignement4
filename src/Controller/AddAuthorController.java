@@ -48,6 +48,8 @@ public class AddAuthorController implements MyController {
 	}
 	
 	public AddAuthorController(Book bk) {
+		this();
+		
 		this.book = bk;
 	}
 	

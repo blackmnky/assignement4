@@ -24,6 +24,10 @@ public class AuthorBook {
 		royalty = -1; //init to -1 
 	}
 	
+	public String toString() {
+		return author.getFirstName() + " " + author.getLastName() + " " + royalty;
+	}
+	
 	public Author getAuthor() {
 		return author;
 	}

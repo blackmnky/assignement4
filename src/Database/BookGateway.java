@@ -298,13 +298,12 @@ public class BookGateway {
 		ObservableList<AuthorBook> authors = FXCollections.observableArrayList();
 		PreparedStatement st = null;
 		try {
-			st = connection.prepareStatement("select a.id as auth_id, a.first_name, a.last_name, a.dob, a.gender, a.website, a.last_modified,"
-					+ " b.author_id as b_id, b.book_id from Author a inner join author_book b on a.id = b.author_id "
+			st = connection.prepareStatement("select a.author_id as a_id, a.book_id, a.royalty, b.id as b_id, b.first_name, b.last_name, b.dob, b.gender, b.website, b.last_modified"
+					+ " from author_book a inner join Author b on a.author_id = b.id "
 					+ "where book_id = ?");
 			st.setInt(1, book.getId());
 			ResultSet rs = st.executeQuery();
 			while(rs.next()) {
-				int auth_id = rs.getInt("author_id");
 				int royal = rs.getInt("royalty");
 				String first = rs.getString("first_name");
 				String last = rs.getString("last_name");
@@ -315,14 +314,14 @@ public class BookGateway {
 				LocalDateTime time = rs.getTimestamp("last_modified").toLocalDateTime();
 				Author auth = new Author(first, last, web, gender, dOB);
 				auth.setLast_modified(time);
-				auth.setId(auth_id);
+				auth.setId(auth.getId());
 				AuthorBook tmp = new AuthorBook(auth, book, royal);
 				tmp.setNewRecord(false);
 				authors.add(tmp);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}		
+		}	
 		return authors;
 	}
 }
