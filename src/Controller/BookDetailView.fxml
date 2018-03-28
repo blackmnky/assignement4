@@ -64,7 +64,7 @@
                   <Label layoutX="14.0" layoutY="14.0" text="Authors" />
                   <Button fx:id="addAuthorButton" layoutX="337.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#addAuthorClicked" text="Add Author" />
                   <Button fx:id="deleteAuthorButton" layoutX="460.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#deleteAuthorClicked" text="Delete Author" />
-                  <TableView layoutY="41.0" prefHeight="242.0" prefWidth="598.0">
+                  <TableView fx:id="authorTable" layoutY="41.0" prefHeight="242.0" prefWidth="598.0">
                     <columns>
                       <TableColumn fx:id="authorField" prefWidth="287.0" text="Author" />
                       <TableColumn fx:id="royaltyField" minWidth="0.0" prefWidth="310.0" text="Royalty" />

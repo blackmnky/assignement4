@@ -148,8 +148,7 @@ public class Author {
 	}
 
 	public String toString() {
-		return getFirstName() + "	  " + getLastName() + "		 " + getGender() + "		 " + getWebField()
-		+ "		" + getDOB();
+		return getFirstName() + " " + getLastName();
 	}
 
 	public AuthorGateway getGateway() {

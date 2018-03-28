@@ -68,7 +68,7 @@ public class BookDetailController implements MyController, Initializable {
     private TableView<AuthorBook> authorTable;
     
     @FXML
-    private TableColumn<AuthorBook, Author> authorField;
+    private TableColumn<AuthorBook, String> authorField;
 
     @FXML
     private TableColumn<AuthorBook, Integer> royaltyField;
