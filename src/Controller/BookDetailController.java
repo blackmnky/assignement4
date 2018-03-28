@@ -8,8 +8,11 @@ import java.util.ResourceBundle;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import Book.Author;
+import Book.AuthorBook;
 import Book.Book;
 import Book.Publisher;
+import Database.BookGateway;
 import Model.AlertHelper;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -17,6 +20,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -27,6 +31,9 @@ public class BookDetailController implements MyController, Initializable {
 	private static Logger logger = LogManager.getLogger();
 	private Book book;
 	private ObservableList<Publisher> publishers;
+	private ObservableList<AuthorBook> abList;
+	private BookGateway gateway;
+
 	
 	@FXML private ComboBox<Publisher> publisherBox;
 
@@ -54,14 +61,25 @@ public class BookDetailController implements MyController, Initializable {
    
     @FXML private Button backButton;
 
+    @FXML
+    private ListView<AuthorBook> authorList;
+
+    @FXML
+    private Button addAuthorButton;
+
+    @FXML
+    private Button deleteAuthorButton;
 
     public BookDetailController() {
     	
     }
     
-    public BookDetailController(Book book, ObservableList<Publisher> publishers) {
+    public BookDetailController(Book book, ObservableList<Publisher> publishers, BookGateway gate) {
     		this();
-
+    		
+    		authorList = new ListView<AuthorBook>();
+    		abList = gateway.getAuthorsForBook(this.book);
+    		this.gateway = gate;
 		this.book = book;
 		this.publishers = publishers;
 	}
@@ -119,6 +137,26 @@ public class BookDetailController implements MyController, Initializable {
     }
     
     @FXML
+    void addAuthorClicked(MouseEvent event) {
+    		logger.info("Add Author Button Clicked");
+    		if(event.getClickCount() == 1) {
+    			try {
+					MenuController.getInstance().changeViews(MenuController.ADDAUTHOR, "");
+				} catch (IOException | SQLException e) {
+					e.printStackTrace();
+				}
+    		}
+    }
+    
+    @FXML
+    void deleteAuthorClicked(MouseEvent event) {
+    		logger.info("Delete Author Button Clicked");
+    		if(event.getClickCount() == 1) {
+    			
+    		}
+    }
+    
+    @FXML
     void auditTrailClicked(MouseEvent event) {
     		logger.info("Audit Trail Button Clicked");
     		
@@ -137,7 +175,15 @@ public class BookDetailController implements MyController, Initializable {
     		}
     }
     
-    @Override
+    public BookGateway getGateway() {
+		return gateway;
+	}
+
+	public void setGateway(BookGateway gateway) {
+		this.gateway = gateway;
+	}
+
+	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		logger.info("bookdetailcontroller init");
 		titleField.textProperty().bindBidirectional(book.titleProperty());
@@ -147,5 +193,6 @@ public class BookDetailController implements MyController, Initializable {
 		summaryField.textProperty().bindBidirectional(book.summaryProperty());
 		isbnField.textProperty().bindBidirectional(book.isbnProperty());
 		yearPublishedField.textProperty().bindBidirectional(book.yearPublishedProperty(), new NumberStringConverter());
+		authorList.setItems(abList);
     }
 }

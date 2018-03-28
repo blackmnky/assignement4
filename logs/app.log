@@ -950,3 +950,80 @@
 22:31:11.987 INFO  Controller.MenuController : calling exit
 22:31:11.995 INFO  Model.MenuLauncher : calling stop
 22:31:11.998 INFO  Model.MenuLauncher : closed connection
+15:25:46.584 INFO  Model.MenuLauncher : calling init
+15:25:47.204 INFO  Model.MenuLauncher : made connection
+15:25:47.233 INFO  Model.MenuLauncher : calling start
+15:25:47.550 INFO  Controller.MenuController : calling initialize
+15:25:52.642 INFO  Controller.MenuController : bookListClicked
+15:25:52.643 INFO  Controller.MenuController : changeViews
+15:25:52.703 INFO  Database.BookGateway : fetching books
+15:25:52.763 INFO  Book.Book : calling book
+15:25:52.764 INFO  Book.Book : calling book
+15:25:52.770 INFO  Book.Book : calling book
+15:25:52.771 INFO  Book.Book : calling book
+15:25:52.772 INFO  Book.Book : calling book
+15:25:52.773 INFO  Book.Book : calling book
+15:25:52.774 INFO  Book.Book : calling book
+15:25:52.775 INFO  Book.Book : calling book
+15:25:52.776 INFO  Book.Book : calling book
+15:25:52.777 INFO  Book.Book : calling book
+15:25:52.854 INFO  Controller.BookListController : calling initialize
+15:25:55.890 INFO  Controller.BookListController : Book Clicked
+15:25:56.082 INFO  Controller.BookListController : Book Clicked
+15:25:56.083 INFO  Controller.BookListController : Book Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    3467    2018-03-09clicked
+15:25:56.083 INFO  Controller.MenuController : changeViews
+15:25:56.117 INFO  Database.PublisherGateway : fetching publishers
+15:25:59.624 INFO  Model.MenuLauncher : calling stop
+15:25:59.627 INFO  Model.MenuLauncher : closed connection
+15:28:10.051 INFO  Model.MenuLauncher : calling init
+15:28:10.587 INFO  Model.MenuLauncher : made connection
+15:28:10.620 INFO  Model.MenuLauncher : calling start
+15:28:10.919 INFO  Controller.MenuController : calling initialize
+15:28:17.184 INFO  Controller.MenuController : bookListClicked
+15:28:17.185 INFO  Controller.MenuController : changeViews
+15:28:17.190 INFO  Database.BookGateway : fetching books
+15:28:17.220 INFO  Book.Book : calling book
+15:28:17.221 INFO  Book.Book : calling book
+15:28:17.225 INFO  Book.Book : calling book
+15:28:17.226 INFO  Book.Book : calling book
+15:28:17.227 INFO  Book.Book : calling book
+15:28:17.227 INFO  Book.Book : calling book
+15:28:17.228 INFO  Book.Book : calling book
+15:28:17.229 INFO  Book.Book : calling book
+15:28:17.230 INFO  Book.Book : calling book
+15:28:17.231 INFO  Book.Book : calling book
+15:28:17.299 INFO  Controller.BookListController : calling initialize
+15:28:18.560 INFO  Controller.BookListController : Book Clicked
+15:28:18.745 INFO  Controller.BookListController : Book Clicked
+15:28:18.746 INFO  Controller.BookListController : Book fasdasd    sadfasdfas    1981    Mark Twain    sdfasdf    2018-03-20clicked
+15:28:18.746 INFO  Controller.MenuController : changeViews
+15:28:18.750 INFO  Database.PublisherGateway : fetching publishers
+15:28:18.828 INFO  Controller.BookDetailController : bookdetailcontroller init
+15:28:27.994 INFO  Model.MenuLauncher : calling stop
+15:28:28.007 INFO  Model.MenuLauncher : closed connection
+15:29:39.593 INFO  Model.MenuLauncher : calling init
+15:29:40.103 INFO  Model.MenuLauncher : made connection
+15:29:40.145 INFO  Model.MenuLauncher : calling start
+15:29:40.456 INFO  Controller.MenuController : calling initialize
+15:29:43.611 INFO  Controller.MenuController : bookListClicked
+15:29:43.611 INFO  Controller.MenuController : changeViews
+15:29:43.625 INFO  Database.BookGateway : fetching books
+15:29:43.667 INFO  Book.Book : calling book
+15:29:43.668 INFO  Book.Book : calling book
+15:29:43.672 INFO  Book.Book : calling book
+15:29:43.673 INFO  Book.Book : calling book
+15:29:43.673 INFO  Book.Book : calling book
+15:29:43.674 INFO  Book.Book : calling book
+15:29:43.675 INFO  Book.Book : calling book
+15:29:43.676 INFO  Book.Book : calling book
+15:29:43.677 INFO  Book.Book : calling book
+15:29:43.678 INFO  Book.Book : calling book
+15:29:43.749 INFO  Controller.BookListController : calling initialize
+15:29:45.453 INFO  Controller.BookListController : Book Clicked
+15:29:45.637 INFO  Controller.BookListController : Book Clicked
+15:29:45.638 INFO  Controller.BookListController : Book Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    3467    2018-03-09clicked
+15:29:45.638 INFO  Controller.MenuController : changeViews
+15:29:45.652 INFO  Database.PublisherGateway : fetching publishers
+15:29:45.730 INFO  Controller.BookDetailController : bookdetailcontroller init
+15:29:58.864 INFO  Model.MenuLauncher : calling stop
+15:29:58.869 INFO  Model.MenuLauncher : closed connection
