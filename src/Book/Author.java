@@ -200,17 +200,14 @@ public class Author {
 	}
 
 	public SimpleStringProperty firstNameFieldProperty() {
-		// TODO Auto-generated method stub
 		return firstName;
 	}
 
 	public SimpleStringProperty webFieldProperty() {
-		// TODO Auto-generated method stub
 		return webField;
 	}
 
 	public SimpleStringProperty lastNameFieldProperty() {
-		// TODO Auto-generated method stub
 		return lastName;
 	}
 

@@ -193,9 +193,8 @@ public class MenuController implements Initializable, MyController{
 				break;
 			case ADDAUTHOR:
 				fxmlFile = this.getClass().getResource("addAuthor.fxml");
-				controller = new AddAuthorController();
-				break;
-				
+				controller = new AddAuthorController((Book)arg, new AuthorGateway(connection));
+				break;	
 			}
 			FXMLLoader loader = new FXMLLoader(fxmlFile);
 			loader.setController(controller);

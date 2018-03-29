@@ -150,7 +150,7 @@ public class BookDetailController implements MyController, Initializable {
     		logger.info("Add Author Button Clicked");
     		if(event.getClickCount() == 1) {
     			try {
-					MenuController.getInstance().changeViews(MenuController.ADDAUTHOR, "");
+					MenuController.getInstance().changeViews(MenuController.ADDAUTHOR, book);
 				} catch (IOException | SQLException e) {
 					e.printStackTrace();
 				}
