@@ -87,33 +87,29 @@ public class AuthorGateway {
 	public void updateAuthor(Author author) {
 		logger.info("calling updateAuthor");
 		PreparedStatement st = null;
-		Date date = Date.valueOf(author.getDOB());
-		LocalDateTime dbTime = getTimeStamp(author);
+		LocalDate bday = author.getDOB();
+		Date date = Date.valueOf(bday);
 		insertAuditTrail(author);
-		if(dbTime.equals(author.getLast_modified())) {
+		try {
+			st = connection.prepareStatement("update Author set first_name = ?, last_name = ?, dob = ?, gender = ?, website = ? where id = ?");
+			st.setString(1, author.getFirstName());
+			st.setString(2, author.getLastName());
+			st.setDate(3, date);
+			st.setString(4, author.getGender());
+			st.setString(5, author.getWebField());
+			st.setInt(6, author.getId());
+			st.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
 			try {
-				st = connection.prepareStatement("update Author set first_name = ?, last_name = ?, dob = ?, gender = ?, website = ? where id = ?");
-				st.setString(1, author.getFirstName());
-				st.setString(2, author.getLastName());
-				st.setDate(3, date);
-				st.setString(4, author.getGender());
-				st.setString(5, author.getWebField());
-				st.setInt(6, author.getId());
-				st.executeUpdate();
+				if (st != null)
+					st.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
-			} finally {
-				try {
-					if (st != null)
-						st.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
 			}
-			author.setLast_modified(getTimeStamp(author));
-		}else {
-			Model.AlertHelper.showWarningMessage("Error", "Timestamps not the same", "Please go back to the Author List to fetch a fresh copy of the Author");
 		}
+		author.setLast_modified(getTimeStamp(author));
 	}
 	
 	public void insertAuthor(Author author) {

@@ -12,6 +12,7 @@ import Book.Author;
 import Book.AuthorBook;
 import Book.Book;
 import Book.Publisher;
+import Database.AuthorBookGateway;
 import Database.BookGateway;
 import Model.AlertHelper;
 import javafx.collections.ObservableList;
@@ -36,6 +37,7 @@ public class BookDetailController implements MyController, Initializable {
 	private ObservableList<Publisher> publishers;
 	private ObservableList<AuthorBook> abList;
 	private BookGateway gateway;
+	private AuthorBookGateway abGate;
 
 	
 	@FXML private ComboBox<Publisher> publisherBox;
@@ -83,11 +85,13 @@ public class BookDetailController implements MyController, Initializable {
     	
     }
     
-    public BookDetailController(Book book, ObservableList<Publisher> publishers, BookGateway gate) {
+    public BookDetailController(Book book, ObservableList<Publisher> publishers, BookGateway gate, AuthorBookGateway abGate) {
     		this();
+    		logger.info(book);
     		
     		authorTable = new TableView<AuthorBook>();
     		this.gateway = gate;
+    		this.abGate = abGate;
 		this.book = book;
 		this.publishers = publishers;
 		abList = gateway.getAuthorsForBook(this.book);
@@ -161,6 +165,15 @@ public class BookDetailController implements MyController, Initializable {
     void deleteAuthorClicked(MouseEvent event) {
     		logger.info("Delete Author Button Clicked");
     		if(event.getClickCount() == 1) {
+    			AuthorBook tmp = authorTable.getSelectionModel().getSelectedItem();
+    			tmp.setGateway(abGate);
+    			if(abList.size() == 1) {
+    				AlertHelper.showWarningMessage("Oops!", "You must have at least one Author for a book", "Please Delete Book before Deleteing Author");
+    			}else {
+    				logger.info(tmp);
+    				tmp.delete();
+    				abList.remove(tmp);
+    			}
     			
     		}
     }

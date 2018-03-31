@@ -62,6 +62,10 @@ public class Author {
 	public void delete() {
 		gateway.deleteAuthor(this);
 	}
+	
+	public LocalDateTime getTimeStamp() {
+		return gateway.getTimeStamp(this);
+	}
 
 	public void save() throws Exception {
 		logger.info("calling Author.save()");

@@ -3,6 +3,8 @@ package Controller;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.ResourceBundle;
 
 import org.apache.logging.log4j.LogManager;
@@ -76,27 +78,34 @@ public class AuthorDetailController implements Initializable, MyController {
 		logger.info("calling onSave");
 		logger.info(author.toString());
 		// check the validity of variables
-		if(event.getClickCount() == 1) {
-			if(!author.isValidFirstName(author.getFirstName())) 
-				logger.error("Invalid first name"); 
-	
-			if(!author.isValidLastName(author.getLastName())) 
-				logger.error("Invalid last name"); 
-	
-			if(!author.isValidWebsite(author.getWebField())) 
-				logger.error("Invalid webiste"); 
-				
-			if(!author.isValidGender(author.getGender())) 
-				logger.error("Invalid gender"); 
-	
-			if(!author.isValidDate(author.getDOB()))
-				logger.error("Invalid Date Of Birth"); 
-	
-			if(!author.isValidId(author.getId())) 
-				logger.error("Invalid Id");
-	
-			author.save();
-			MenuController.getInstance().changeViews(MenuController.AUTHORLIST, null);
+		LocalDateTime originaltime = author.getTimeStamp();
+		if(originaltime.equals(author.getLast_modified())) {
+			if(event.getClickCount() == 1) {
+				if(!author.isValidFirstName(author.getFirstName())) 
+					logger.error("Invalid first name"); 
+		
+				if(!author.isValidLastName(author.getLastName())) 
+					logger.error("Invalid last name"); 
+		
+				if(!author.isValidWebsite(author.getWebField())) 
+					logger.error("Invalid webiste"); 
+					
+				if(!author.isValidGender(author.getGender())) 
+					logger.error("Invalid gender"); 
+		
+				if(!author.isValidDate(author.getDOB()))
+					logger.error("Invalid Date Of Birth"); 
+		
+				if(!author.isValidId(author.getId())) 
+					logger.error("Invalid Id");
+		
+				author.save();
+				MenuController.getInstance().changeViews(MenuController.AUTHORLIST, null);
+			}
+		}else {
+			Model.AlertHelper.showWarningMessage("Error", "Timestamps not the same", "Please go back to the Author List to fetch a fresh copy of the Author");
+			author.update();
+			originaltime = author.getLast_modified();		
 		}
 	}
 	

@@ -11,6 +11,8 @@ import org.apache.logging.log4j.Logger;
 
 import Book.Book;
 import Book.Author;
+import Book.AuthorBook;
+import Database.AuthorBookGateway;
 import Database.AuthorGateway;
 import Database.BookGateway;
 import Database.PublisherGateway;
@@ -164,12 +166,12 @@ public class MenuController implements Initializable, MyController{
 			case BOOKDETAIL:
 				fxmlFile = this.getClass().getResource("BookDetailView.fxml");
 				PublisherGateway gateway = new PublisherGateway(connection);
-				controller = new BookDetailController((Book)arg, gateway.getPublishers(), new BookGateway(connection));
+				controller = new BookDetailController((Book)arg, gateway.getPublishers(), new BookGateway(connection), new AuthorBookGateway(connection));
 				break;
 			case ADDBOOK:
 				fxmlFile = this.getClass().getResource("BookDetailView.fxml");
 				PublisherGateway gateway1 = new PublisherGateway(connection);
-				controller = new BookDetailController((Book)arg, gateway1.getPublishers(), new BookGateway(connection));
+				controller = new BookDetailController((Book)arg, gateway1.getPublishers(), new BookGateway(connection), new AuthorBookGateway(connection));
 				break;
 			case HELP:
 				fxmlFile = this.getClass().getResource("aboutScreen.fxml");
@@ -193,7 +195,9 @@ public class MenuController implements Initializable, MyController{
 				break;
 			case ADDAUTHOR:
 				fxmlFile = this.getClass().getResource("addAuthor.fxml");
-				controller = new AddAuthorController((Book)arg, new AuthorGateway(connection));
+				AuthorBook aut = new AuthorBook();
+				aut.setBook((Book)arg);
+				controller = new AddAuthorController(new AuthorGateway(connection), aut, new AuthorBookGateway(connection));
 				break;	
 			}
 			FXMLLoader loader = new FXMLLoader(fxmlFile);
