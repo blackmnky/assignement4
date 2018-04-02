@@ -4744,3 +4744,346 @@
 18:20:59.684 INFO  Controller.MenuController : calling exit
 18:20:59.696 INFO  Model.MenuLauncher : calling stop
 18:20:59.701 INFO  Model.MenuLauncher : closed connection
+18:31:36.340 INFO  Model.MenuLauncher : calling init
+18:31:36.837 INFO  Model.MenuLauncher : made connection
+18:31:36.880 INFO  Model.MenuLauncher : calling start
+18:31:37.213 INFO  Controller.MenuController : calling initialize
+18:33:08.406 INFO  Controller.MenuController : bookListClicked
+18:33:08.407 INFO  Controller.MenuController : changeViews
+18:33:08.414 INFO  Database.BookGateway : fetching books
+18:33:08.451 INFO  Book.Book : calling book
+18:33:08.452 INFO  Book.Book : calling book
+18:33:08.453 INFO  Book.Book : calling book
+18:33:08.453 INFO  Book.Book : calling book
+18:33:08.454 INFO  Book.Book : calling book
+18:33:08.455 INFO  Book.Book : calling book
+18:33:08.456 INFO  Book.Book : calling book
+18:33:08.456 INFO  Book.Book : calling book
+18:33:08.457 INFO  Book.Book : calling book
+18:33:08.458 INFO  Book.Book : calling book
+18:33:08.530 INFO  Controller.BookListController : calling initialize
+18:33:10.155 INFO  Controller.BookListController : Book Clicked
+18:33:10.308 INFO  Controller.BookListController : Book Clicked
+18:33:10.309 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:33:10.310 INFO  Controller.MenuController : changeViews
+18:33:10.322 INFO  Database.PublisherGateway : fetching publishers
+18:33:10.331 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:33:10.367 INFO  Database.BookGateway : getAuthorsForBook
+18:33:10.376 INFO  Book.Book : calling book
+18:33:10.461 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:33:11.857 INFO  Controller.BookDetailController : Author Clicked
+18:33:12.009 INFO  Controller.BookDetailController : Author Clicked
+18:33:12.010 INFO  Controller.MenuController : changeViews
+18:33:14.653 INFO  Controller.MenuController : changeViews
+18:33:14.654 INFO  Database.PublisherGateway : fetching publishers
+18:33:14.660 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:33:14.661 INFO  Database.BookGateway : getAuthorsForBook
+18:33:14.667 INFO  Book.Book : calling book
+18:33:14.689 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:33:15.904 INFO  Controller.BookDetailController : Author Clicked
+18:33:16.065 INFO  Controller.BookDetailController : Author Clicked
+18:33:16.066 INFO  Controller.MenuController : changeViews
+18:33:16.924 INFO  Controller.MenuController : changeViews
+18:33:16.925 INFO  Database.PublisherGateway : fetching publishers
+18:33:16.930 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:33:16.931 INFO  Database.BookGateway : getAuthorsForBook
+18:33:16.936 INFO  Book.Book : calling book
+18:33:16.958 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:33:21.349 INFO  Controller.BookDetailController : Author Clicked
+18:33:21.493 INFO  Controller.BookDetailController : Author Clicked
+18:33:21.494 INFO  Controller.MenuController : changeViews
+18:33:27.029 INFO  Database.AuthorBookGateway : updating authorBook
+18:33:27.106 INFO  Database.BookGateway : gateway inserting audit entry
+18:33:27.132 INFO  Controller.MenuController : changeViews
+18:33:27.133 INFO  Database.PublisherGateway : fetching publishers
+18:33:27.139 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:33:27.140 INFO  Database.BookGateway : getAuthorsForBook
+18:33:27.145 INFO  Book.Book : calling book
+18:33:27.166 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:33:30.620 INFO  Controller.MenuController : exitClicked
+18:33:30.620 INFO  Controller.MenuController : calling exit
+18:33:30.625 INFO  Model.MenuLauncher : calling stop
+18:33:30.628 INFO  Model.MenuLauncher : closed connection
+18:34:22.813 INFO  Model.MenuLauncher : calling init
+18:34:23.236 INFO  Model.MenuLauncher : made connection
+18:34:23.269 INFO  Model.MenuLauncher : calling start
+18:34:23.444 INFO  Controller.MenuController : calling initialize
+18:34:26.174 INFO  Controller.MenuController : bookListClicked
+18:34:26.182 INFO  Controller.MenuController : changeViews
+18:34:26.188 INFO  Database.BookGateway : fetching books
+18:34:26.219 INFO  Book.Book : calling book
+18:34:26.220 INFO  Book.Book : calling book
+18:34:26.224 INFO  Book.Book : calling book
+18:34:26.224 INFO  Book.Book : calling book
+18:34:26.225 INFO  Book.Book : calling book
+18:34:26.226 INFO  Book.Book : calling book
+18:34:26.226 INFO  Book.Book : calling book
+18:34:26.227 INFO  Book.Book : calling book
+18:34:26.227 INFO  Book.Book : calling book
+18:34:26.228 INFO  Book.Book : calling book
+18:34:26.283 INFO  Controller.BookListController : calling initialize
+18:34:27.480 INFO  Controller.BookListController : Book Clicked
+18:34:27.625 INFO  Controller.BookListController : Book Clicked
+18:34:27.626 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:34:27.626 INFO  Controller.MenuController : changeViews
+18:34:27.639 INFO  Database.PublisherGateway : fetching publishers
+18:34:27.648 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:34:27.669 INFO  Database.BookGateway : getAuthorsForBook
+18:34:27.680 INFO  Book.Book : calling book
+18:34:27.754 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:34:29.041 INFO  Controller.BookDetailController : Author Clicked
+18:34:29.203 INFO  Controller.BookDetailController : Author Clicked
+18:34:29.204 INFO  Controller.BookDetailController : 4.0
+18:34:29.205 INFO  Controller.MenuController : changeViews
+18:34:30.461 INFO  Controller.MenuController : changeViews
+18:34:30.462 INFO  Database.PublisherGateway : fetching publishers
+18:34:30.468 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:34:30.469 INFO  Database.BookGateway : getAuthorsForBook
+18:34:30.474 INFO  Book.Book : calling book
+18:34:30.496 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:34:31.932 INFO  Controller.MenuController : exitClicked
+18:34:31.932 INFO  Controller.MenuController : calling exit
+18:34:31.936 INFO  Model.MenuLauncher : calling stop
+18:34:31.939 INFO  Model.MenuLauncher : closed connection
+18:51:06.836 INFO  Model.MenuLauncher : calling init
+18:51:07.462 INFO  Model.MenuLauncher : made connection
+18:51:07.509 INFO  Model.MenuLauncher : calling start
+18:51:07.820 INFO  Controller.MenuController : calling initialize
+18:51:12.064 INFO  Controller.MenuController : bookListClicked
+18:51:12.065 INFO  Controller.MenuController : changeViews
+18:51:12.077 INFO  Database.BookGateway : fetching books
+18:51:12.109 INFO  Book.Book : calling book
+18:51:12.110 INFO  Book.Book : calling book
+18:51:12.114 INFO  Book.Book : calling book
+18:51:12.114 INFO  Book.Book : calling book
+18:51:12.115 INFO  Book.Book : calling book
+18:51:12.115 INFO  Book.Book : calling book
+18:51:12.116 INFO  Book.Book : calling book
+18:51:12.117 INFO  Book.Book : calling book
+18:51:12.117 INFO  Book.Book : calling book
+18:51:12.118 INFO  Book.Book : calling book
+18:51:12.184 INFO  Controller.BookListController : calling initialize
+18:51:14.033 INFO  Controller.BookListController : Book Clicked
+18:51:14.185 INFO  Controller.BookListController : Book Clicked
+18:51:14.186 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:51:14.187 INFO  Controller.MenuController : changeViews
+18:51:14.198 INFO  Database.PublisherGateway : fetching publishers
+18:51:14.205 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:51:14.232 INFO  Database.BookGateway : getAuthorsForBook
+18:51:14.244 INFO  Book.Book : calling book
+18:51:14.336 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:51:16.014 INFO  Controller.BookDetailController : Author Clicked
+18:51:16.177 INFO  Controller.BookDetailController : Author Clicked
+18:51:16.178 INFO  Controller.MenuController : changeViews
+18:51:19.533 INFO  Database.AuthorBookGateway : updating authorBook
+18:51:19.567 INFO  Database.BookGateway : gateway inserting audit entry
+18:51:19.600 INFO  Controller.MenuController : changeViews
+18:51:19.601 INFO  Database.PublisherGateway : fetching publishers
+18:51:19.605 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:51:19.606 INFO  Database.BookGateway : getAuthorsForBook
+18:51:19.612 INFO  Book.Book : calling book
+18:51:19.638 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:51:22.526 INFO  Model.MenuLauncher : calling stop
+18:51:22.540 INFO  Model.MenuLauncher : closed connection
+18:51:50.169 INFO  Model.MenuLauncher : calling init
+18:51:50.608 INFO  Model.MenuLauncher : made connection
+18:51:50.630 INFO  Model.MenuLauncher : calling start
+18:51:50.840 INFO  Controller.MenuController : calling initialize
+18:51:56.002 INFO  Controller.MenuController : bookListClicked
+18:51:56.002 INFO  Controller.MenuController : changeViews
+18:51:56.016 INFO  Database.BookGateway : fetching books
+18:51:56.049 INFO  Book.Book : calling book
+18:51:56.050 INFO  Book.Book : calling book
+18:51:56.054 INFO  Book.Book : calling book
+18:51:56.054 INFO  Book.Book : calling book
+18:51:56.055 INFO  Book.Book : calling book
+18:51:56.056 INFO  Book.Book : calling book
+18:51:56.056 INFO  Book.Book : calling book
+18:51:56.057 INFO  Book.Book : calling book
+18:51:56.058 INFO  Book.Book : calling book
+18:51:56.058 INFO  Book.Book : calling book
+18:51:56.103 INFO  Controller.BookListController : calling initialize
+18:51:57.400 INFO  Controller.BookListController : Book Clicked
+18:51:57.568 INFO  Controller.BookListController : Book Clicked
+18:51:57.569 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:51:57.569 INFO  Controller.MenuController : changeViews
+18:51:57.582 INFO  Database.PublisherGateway : fetching publishers
+18:51:57.594 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:51:57.615 INFO  Database.BookGateway : getAuthorsForBook
+18:51:57.626 INFO  Book.Book : calling book
+18:51:57.702 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:51:59.928 INFO  Controller.BookDetailController : Author Clicked
+18:52:00.081 INFO  Controller.BookDetailController : Author Clicked
+18:52:00.082 INFO  Controller.BookDetailController : 5.0
+18:52:00.083 INFO  Controller.MenuController : changeViews
+18:52:03.303 INFO  Database.AuthorBookGateway : updating authorBook
+18:52:03.336 INFO  Database.BookGateway : gateway inserting audit entry
+18:52:03.370 INFO  Controller.MenuController : changeViews
+18:52:03.371 INFO  Database.PublisherGateway : fetching publishers
+18:52:03.375 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:52:03.376 INFO  Database.BookGateway : getAuthorsForBook
+18:52:03.381 INFO  Book.Book : calling book
+18:52:03.420 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:52:05.578 INFO  Model.MenuLauncher : calling stop
+18:52:05.591 INFO  Model.MenuLauncher : closed connection
+18:52:42.689 INFO  Model.MenuLauncher : calling init
+18:52:43.130 INFO  Model.MenuLauncher : made connection
+18:52:43.148 INFO  Model.MenuLauncher : calling start
+18:52:43.392 INFO  Controller.MenuController : calling initialize
+18:52:56.337 INFO  Controller.MenuController : bookListClicked
+18:52:56.338 INFO  Controller.MenuController : changeViews
+18:52:56.350 INFO  Database.BookGateway : fetching books
+18:52:56.381 INFO  Book.Book : calling book
+18:52:56.382 INFO  Book.Book : calling book
+18:52:56.386 INFO  Book.Book : calling book
+18:52:56.386 INFO  Book.Book : calling book
+18:52:56.387 INFO  Book.Book : calling book
+18:52:56.387 INFO  Book.Book : calling book
+18:52:56.388 INFO  Book.Book : calling book
+18:52:56.388 INFO  Book.Book : calling book
+18:52:56.389 INFO  Book.Book : calling book
+18:52:56.390 INFO  Book.Book : calling book
+18:52:56.449 INFO  Controller.BookListController : calling initialize
+18:52:57.968 INFO  Controller.BookListController : Book Clicked
+18:52:58.129 INFO  Controller.BookListController : Book Clicked
+18:52:58.130 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:52:58.131 INFO  Controller.MenuController : changeViews
+18:52:58.144 INFO  Database.PublisherGateway : fetching publishers
+18:52:58.153 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:52:58.175 INFO  Database.BookGateway : getAuthorsForBook
+18:52:58.185 INFO  Book.Book : calling book
+18:52:58.264 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:52:59.918 INFO  Controller.BookDetailController : Author Clicked
+18:53:00.096 INFO  Controller.BookDetailController : Author Clicked
+18:53:00.097 INFO  Controller.BookDetailController : 3.0
+18:53:00.098 INFO  Controller.MenuController : changeViews
+18:53:04.166 INFO  Database.AuthorBookGateway : updating authorBook
+18:53:04.200 INFO  Database.BookGateway : gateway inserting audit entry
+18:53:04.232 INFO  Controller.UpdateAuthorController : 2.6
+18:53:04.232 INFO  Controller.MenuController : changeViews
+18:53:04.233 INFO  Database.PublisherGateway : fetching publishers
+18:53:04.238 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:53:04.239 INFO  Database.BookGateway : getAuthorsForBook
+18:53:04.244 INFO  Book.Book : calling book
+18:53:04.271 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:53:05.978 INFO  Model.MenuLauncher : calling stop
+18:53:05.981 INFO  Model.MenuLauncher : closed connection
+18:53:45.053 INFO  Model.MenuLauncher : calling init
+18:53:45.453 INFO  Model.MenuLauncher : made connection
+18:53:45.486 INFO  Model.MenuLauncher : calling start
+18:53:45.670 INFO  Controller.MenuController : calling initialize
+18:53:49.596 INFO  Controller.MenuController : bookListClicked
+18:53:49.596 INFO  Controller.MenuController : changeViews
+18:53:49.609 INFO  Database.BookGateway : fetching books
+18:53:49.640 INFO  Book.Book : calling book
+18:53:49.641 INFO  Book.Book : calling book
+18:53:49.644 INFO  Book.Book : calling book
+18:53:49.645 INFO  Book.Book : calling book
+18:53:49.645 INFO  Book.Book : calling book
+18:53:49.646 INFO  Book.Book : calling book
+18:53:49.646 INFO  Book.Book : calling book
+18:53:49.647 INFO  Book.Book : calling book
+18:53:49.648 INFO  Book.Book : calling book
+18:53:49.648 INFO  Book.Book : calling book
+18:53:49.700 INFO  Controller.BookListController : calling initialize
+18:53:50.830 INFO  Controller.BookListController : Book Clicked
+18:53:50.990 INFO  Controller.BookListController : Book Clicked
+18:53:50.991 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:53:50.992 INFO  Controller.MenuController : changeViews
+18:53:51.004 INFO  Database.PublisherGateway : fetching publishers
+18:53:51.013 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:53:51.034 INFO  Database.BookGateway : getAuthorsForBook
+18:53:51.040 INFO  Database.BookGateway : 2.0
+18:53:51.047 INFO  Book.Book : calling book
+18:53:51.126 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:53:52.254 INFO  Controller.BookDetailController : Author Clicked
+18:53:52.407 INFO  Controller.BookDetailController : Author Clicked
+18:53:52.408 INFO  Controller.BookDetailController : 2.0
+18:53:52.409 INFO  Controller.MenuController : changeViews
+18:53:55.649 INFO  Database.AuthorBookGateway : updating authorBook
+18:53:55.686 INFO  Database.BookGateway : gateway inserting audit entry
+18:53:55.719 INFO  Controller.UpdateAuthorController : 5.6
+18:53:55.720 INFO  Controller.MenuController : changeViews
+18:53:55.721 INFO  Database.PublisherGateway : fetching publishers
+18:53:55.725 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:53:55.726 INFO  Database.BookGateway : getAuthorsForBook
+18:53:55.730 INFO  Database.BookGateway : 5.0
+18:53:55.731 INFO  Book.Book : calling book
+18:53:55.755 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:53:57.364 INFO  Model.MenuLauncher : calling stop
+18:53:57.369 INFO  Model.MenuLauncher : closed connection
+18:54:32.691 INFO  Model.MenuLauncher : calling init
+18:54:33.145 INFO  Model.MenuLauncher : made connection
+18:54:33.181 INFO  Model.MenuLauncher : calling start
+18:54:33.364 INFO  Controller.MenuController : calling initialize
+18:54:35.998 INFO  Controller.MenuController : bookListClicked
+18:54:35.998 INFO  Controller.MenuController : changeViews
+18:54:36.011 INFO  Database.BookGateway : fetching books
+18:54:36.044 INFO  Book.Book : calling book
+18:54:36.045 INFO  Book.Book : calling book
+18:54:36.049 INFO  Book.Book : calling book
+18:54:36.049 INFO  Book.Book : calling book
+18:54:36.050 INFO  Book.Book : calling book
+18:54:36.051 INFO  Book.Book : calling book
+18:54:36.051 INFO  Book.Book : calling book
+18:54:36.052 INFO  Book.Book : calling book
+18:54:36.052 INFO  Book.Book : calling book
+18:54:36.053 INFO  Book.Book : calling book
+18:54:36.101 INFO  Controller.BookListController : calling initialize
+18:54:37.328 INFO  Controller.BookListController : Book Clicked
+18:54:37.480 INFO  Controller.BookListController : Book Clicked
+18:54:37.481 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:54:37.481 INFO  Controller.MenuController : changeViews
+18:54:37.485 INFO  Database.PublisherGateway : fetching publishers
+18:54:37.494 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:54:37.515 INFO  Database.BookGateway : getAuthorsForBook
+18:54:37.520 INFO  Database.BookGateway : 5.0
+18:54:37.525 INFO  Book.Book : calling book
+18:54:37.609 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:54:39.194 INFO  Controller.BookDetailController : Author Clicked
+18:54:39.364 INFO  Controller.BookDetailController : Author Clicked
+18:54:39.365 INFO  Controller.BookDetailController : 5.0
+18:54:39.365 INFO  Controller.MenuController : changeViews
+18:54:42.039 INFO  Database.AuthorBookGateway : updating authorBook
+18:54:42.071 INFO  Database.BookGateway : gateway inserting audit entry
+18:54:42.105 INFO  Controller.UpdateAuthorController : 2.6
+18:54:42.106 INFO  Controller.MenuController : changeViews
+18:54:42.106 INFO  Database.PublisherGateway : fetching publishers
+18:54:42.111 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:54:42.113 INFO  Database.BookGateway : getAuthorsForBook
+18:54:42.119 INFO  Database.BookGateway : 2.0
+18:54:42.120 INFO  Book.Book : calling book
+18:54:42.156 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:54:44.515 INFO  Model.MenuLauncher : calling stop
+18:54:44.520 INFO  Model.MenuLauncher : closed connection
+18:55:47.711 INFO  Model.MenuLauncher : calling init
+18:55:48.203 INFO  Model.MenuLauncher : made connection
+18:55:48.236 INFO  Model.MenuLauncher : calling start
+18:55:48.542 INFO  Controller.MenuController : calling initialize
+18:55:52.001 INFO  Controller.MenuController : bookListClicked
+18:55:52.001 INFO  Controller.MenuController : changeViews
+18:55:52.014 INFO  Database.BookGateway : fetching books
+18:55:52.046 INFO  Book.Book : calling book
+18:55:52.046 INFO  Book.Book : calling book
+18:55:52.050 INFO  Book.Book : calling book
+18:55:52.051 INFO  Book.Book : calling book
+18:55:52.052 INFO  Book.Book : calling book
+18:55:52.053 INFO  Book.Book : calling book
+18:55:52.053 INFO  Book.Book : calling book
+18:55:52.054 INFO  Book.Book : calling book
+18:55:52.055 INFO  Book.Book : calling book
+18:55:52.056 INFO  Book.Book : calling book
+18:55:52.129 INFO  Controller.BookListController : calling initialize
+18:55:53.284 INFO  Controller.BookListController : Book Clicked
+18:55:53.428 INFO  Controller.BookListController : Book Clicked
+18:55:53.429 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:55:53.430 INFO  Controller.MenuController : changeViews
+18:55:53.443 INFO  Database.PublisherGateway : fetching publishers
+18:55:53.451 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:55:53.484 INFO  Database.BookGateway : getAuthorsForBook
+18:55:53.494 INFO  Book.Book : calling book
+18:55:53.576 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:55:58.508 INFO  Controller.MenuController : exitClicked
+18:55:58.517 INFO  Controller.MenuController : calling exit
+18:55:58.532 INFO  Model.MenuLauncher : calling stop
+18:55:58.537 INFO  Model.MenuLauncher : closed connection

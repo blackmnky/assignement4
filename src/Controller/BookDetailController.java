@@ -15,6 +15,8 @@ import Book.Publisher;
 import Database.AuthorBookGateway;
 import Database.BookGateway;
 import Model.AlertHelper;
+import javafx.beans.property.ReadOnlyDoubleWrapper;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -70,7 +72,7 @@ public class BookDetailController implements MyController, Initializable {
     
     @FXML private TableColumn<AuthorBook, String> authorField;
 
-    @FXML private TableColumn<AuthorBook, Double> royaltyField;
+    @FXML private TableColumn<AuthorBook, Number> royaltyField;
 
     @FXML private Button addAuthorButton;
 
@@ -179,6 +181,7 @@ public class BookDetailController implements MyController, Initializable {
     		logger.info("Author Clicked");
     		if(event.getClickCount() == 2) {
     			AuthorBook auth = authorTable.getSelectionModel().getSelectedItem();
+    			logger.info(auth.getRoyalty());
     			try {
 					MenuController.getInstance().changeViews(MenuController.UPDATEAUTHOR, auth);
 				} catch (IOException | SQLException e) {
@@ -226,8 +229,9 @@ public class BookDetailController implements MyController, Initializable {
 		summaryField.textProperty().bindBidirectional(book.summaryProperty());
 		isbnField.textProperty().bindBidirectional(book.isbnProperty());
 		yearPublishedField.textProperty().bindBidirectional(book.yearPublishedProperty(), new NumberStringConverter());
-		authorField.setCellValueFactory(new PropertyValueFactory("author"));
-		royaltyField.setCellValueFactory(new PropertyValueFactory("royalty"));
+		authorField.setCellValueFactory(new PropertyValueFactory<AuthorBook, String>("author"));
+		//royaltyField.setCellValueFactory(new PropertyValueFactory<AuthorBook, Double>("royalty"));
+		royaltyField.setCellValueFactory(cellData -> new ReadOnlyDoubleWrapper(cellData.getValue().getRoyalty()));
 		authorTable.setItems(abList);
 
 

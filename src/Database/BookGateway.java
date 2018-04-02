@@ -304,7 +304,7 @@ public class BookGateway {
 			st.setInt(1, book.getId());
 			ResultSet rs = st.executeQuery();
 			while(rs.next()) {
-				double royal = rs.getInt("royalty");
+				double royal = rs.getDouble("royalty");
 				String first = rs.getString("first_name");
 				String last = rs.getString("last_name");
 				String gender = rs.getString("gender");
