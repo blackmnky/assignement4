@@ -37,8 +37,8 @@ public class AuthorBookGateway {
 		logger.info("deleteing authorBook ");
 		PreparedStatement st  = null;
 		try {
-			st = connection.prepareStatement("delete from author_book where book_id = ?");
-			st.setInt(1, authBook.book.getId());
+			st = connection.prepareStatement("delete from author_book where author_id = ?");
+			st.setInt(1, authBook.getAuthor().getId());
 			st.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -56,9 +56,10 @@ public class AuthorBookGateway {
 		logger.info("updating authorBook");
 		PreparedStatement st = null;
 		try {
-			st = connection.prepareStatement("update author_book set royalty = ? where book_id = ?");
+			st = connection.prepareStatement("update author_book set royalty = ? where author_id = ?");
 			st.setDouble(1, authBook.getRoyalty());
-			st.setInt(2, authBook.book.getId());
+			st.setInt(2, authBook.getAuthor().getId());
+			st.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}finally {

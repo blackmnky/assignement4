@@ -66,20 +66,15 @@ public class BookDetailController implements MyController, Initializable {
    
     @FXML private Button backButton;
     
-    @FXML
-    private TableView<AuthorBook> authorTable;
+    @FXML private TableView<AuthorBook> authorTable;
     
-    @FXML
-    private TableColumn<AuthorBook, String> authorField;
+    @FXML private TableColumn<AuthorBook, String> authorField;
 
-    @FXML
-    private TableColumn<AuthorBook, Integer> royaltyField;
+    @FXML private TableColumn<AuthorBook, Double> royaltyField;
 
-    @FXML
-    private Button addAuthorButton;
+    @FXML private Button addAuthorButton;
 
-    @FXML
-    private Button deleteAuthorButton;
+    @FXML private Button deleteAuthorButton;
 
     public BookDetailController() {
     	
@@ -183,7 +178,6 @@ public class BookDetailController implements MyController, Initializable {
     		logger.info("Author Clicked");
     		if(event.getClickCount() == 2) {
     			AuthorBook auth = authorTable.getSelectionModel().getSelectedItem();
-    			logger.info(auth.getAuthor().getId());
     			try {
 					MenuController.getInstance().changeViews(MenuController.UPDATEAUTHOR, auth);
 				} catch (IOException | SQLException e) {

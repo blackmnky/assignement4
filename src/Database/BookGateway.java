@@ -314,7 +314,7 @@ public class BookGateway {
 				LocalDateTime time = rs.getTimestamp("last_modified").toLocalDateTime();
 				Author auth = new Author(first, last, web, gender, dOB);
 				auth.setLast_modified(time);
-				auth.setId(auth.getId());
+				auth.setId(rs.getInt("b_id"));
 				AuthorBook tmp = new AuthorBook(auth, book, royal);
 				tmp.setNewRecord(false);
 				authors.add(tmp);
