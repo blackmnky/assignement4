@@ -168,6 +168,7 @@ public class BookDetailController implements MyController, Initializable {
     				logger.info(tmp);
     				tmp.delete();
     				abList.remove(tmp);
+    				gateway.insertAuditEntry(book, tmp.toString() + " was deleted");
     			}
     			
     		}
