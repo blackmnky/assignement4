@@ -42,6 +42,7 @@ public class MenuController implements Initializable, MyController{
 	public static final int AUTHORDETAIL = 7;
 	public static final int AUTHORAUTIDTRAIL = 8;
 	public static final int ADDAUTHOR = 9;
+	public static final int UPDATEAUTHOR = 10;
 	@FXML private MenuItem Exit;
 
     @FXML private MenuItem BookList;
@@ -197,8 +198,12 @@ public class MenuController implements Initializable, MyController{
 				fxmlFile = this.getClass().getResource("addAuthor.fxml");
 				AuthorBook aut = new AuthorBook();
 				aut.setBook((Book)arg);
-				controller = new AddAuthorController(new AuthorGateway(connection), aut, new AuthorBookGateway(connection));
+				controller = new AddAuthorController(new AuthorGateway(connection), aut, new AuthorBookGateway(connection), new BookGateway(connection));
 				break;	
+			case UPDATEAUTHOR:
+				fxmlFile = this.getClass().getResource("updateAuthorView.fxml");
+				controller = new UpdateAuthorController((AuthorBook)arg, new AuthorBookGateway(connection), new BookGateway(connection));
+				break;
 			}
 			FXMLLoader loader = new FXMLLoader(fxmlFile);
 			loader.setController(controller);

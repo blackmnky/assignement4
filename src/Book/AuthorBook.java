@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import Database.AuthorBookGateway;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
@@ -12,22 +13,22 @@ public class AuthorBook {
 
 	//public Author author;
 	public Book book = new Book();
-	SimpleIntegerProperty royalty = new SimpleIntegerProperty();
+	SimpleDoubleProperty royalty = new SimpleDoubleProperty();
 	public SimpleObjectProperty<Author> author = new SimpleObjectProperty<Author>();
 	private boolean newRecord = true; //default is true
 	private AuthorBookGateway gateway;
 	
-	public AuthorBook(Author auth, Book bk, int r) {
+	public AuthorBook(Author auth, Book bk, double d) {
 		//this.author = auth;
 		setAuth(auth);
 		this.book = bk;
-		setRoyalty(r);
+		setRoyalty(d);
 	}
 	
 	public AuthorBook() {
 		logger.info("new AuthorBook");
 		//author = new Author();
-		setRoyalty(0);
+		setRoyalty(0.0);
 	}
 	
 	public void delete() {
@@ -51,10 +52,10 @@ public class AuthorBook {
 	public void setBook(Book book) {
 		this.book = book;
 	}
-	public int getRoyalty() {
+	public double getRoyalty() {
 		return royalty.get();
 	}
-	public void setRoyalty(int royalty) {
+	public void setRoyalty(double royalty) {
 		this.royalty.set(royalty);
 	}
 	public boolean isNewRecord() {
@@ -72,11 +73,11 @@ public class AuthorBook {
 		this.gateway = gateway;
 	}
 
-	public SimpleIntegerProperty getRoyal() {
+	public SimpleDoubleProperty getRoyal() {
 		return royalty;
 	}
 
-	public void setRoyal(SimpleIntegerProperty royal) {
+	public void setRoyal(SimpleDoubleProperty royal) {
 		this.royalty = royal;
 	}
 

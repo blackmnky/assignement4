@@ -305,7 +305,6 @@ public class BookGateway {
 			ResultSet rs = st.executeQuery();
 			while(rs.next()) {
 				double royal = rs.getInt("royalty");
-				int royalty = (int)royal * 100000;
 				String first = rs.getString("first_name");
 				String last = rs.getString("last_name");
 				String gender = rs.getString("gender");
@@ -316,7 +315,7 @@ public class BookGateway {
 				Author auth = new Author(first, last, web, gender, dOB);
 				auth.setLast_modified(time);
 				auth.setId(auth.getId());
-				AuthorBook tmp = new AuthorBook(auth, book, royalty);
+				AuthorBook tmp = new AuthorBook(auth, book, royal);
 				tmp.setNewRecord(false);
 				authors.add(tmp);
 			}

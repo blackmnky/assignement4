@@ -14,6 +14,7 @@ import Book.Book;
 import Book.Publisher;
 import Database.AuthorBookGateway;
 import Database.AuthorGateway;
+import Database.BookGateway;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -29,6 +30,7 @@ public class AddAuthorController implements MyController, Initializable {
 	private Book book;
 	public AuthorGateway agateway;
 	private AuthorBookGateway bgateway;
+	private BookGateway cgateway;
 	private ObservableList<Author> authors;
 	private Author author;
 	private AuthorBook authBook;
@@ -61,13 +63,13 @@ public class AddAuthorController implements MyController, Initializable {
 		
 	}
 	
-	public AddAuthorController(AuthorGateway agate, AuthorBook ab, AuthorBookGateway bgateway) {
+	public AddAuthorController(AuthorGateway agate, AuthorBook ab, AuthorBookGateway bgateway, BookGateway cgate) {
 		this();
 		
 		this.authBook = ab;
 		this.agateway = agate;
 		this.bgateway = bgateway;
-		//this.book = bk;
+		this.cgateway = cgate;
 		try {
 			this.authors = agateway.getAuthors();
 		} catch (SQLException e) {
@@ -93,7 +95,7 @@ public class AddAuthorController implements MyController, Initializable {
     			AuthorBook tmp =  new AuthorBook(authBook.getAuthor(), authBook.book, authBook.getRoyalty());
     			tmp.setNewRecord(true);
     			bgateway.insertAuthBook(tmp);
-    			
+    			cgateway.insertAuditEntry(authBook.book, "New Author Added to book" + authBook.getAuthor());
     			try {
 					MenuController.getInstance().changeViews(MenuController.BOOKDETAIL, tmp.book);
 				} catch (IOException | SQLException e) {

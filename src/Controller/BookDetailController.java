@@ -179,6 +179,20 @@ public class BookDetailController implements MyController, Initializable {
     }
     
     @FXML
+    void authorClicked(MouseEvent event) {
+    		logger.info("Author Clicked");
+    		if(event.getClickCount() == 2) {
+    			AuthorBook auth = authorTable.getSelectionModel().getSelectedItem();
+    			logger.info(auth.getAuthor().getId());
+    			try {
+					MenuController.getInstance().changeViews(MenuController.UPDATEAUTHOR, auth);
+				} catch (IOException | SQLException e) {
+					e.printStackTrace();
+				}
+    		}
+    }
+    
+    @FXML
     void auditTrailClicked(MouseEvent event) {
     		logger.info("Audit Trail Button Clicked");
     		
@@ -196,6 +210,8 @@ public class BookDetailController implements MyController, Initializable {
     			return;
     		}
     }
+    
+    
     
     public BookGateway getGateway() {
 		return gateway;
