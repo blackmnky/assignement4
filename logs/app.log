@@ -5087,3 +5087,308 @@
 18:55:58.517 INFO  Controller.MenuController : calling exit
 18:55:58.532 INFO  Model.MenuLauncher : calling stop
 18:55:58.537 INFO  Model.MenuLauncher : closed connection
+18:56:57.425 INFO  Model.MenuLauncher : calling init
+18:56:57.874 INFO  Model.MenuLauncher : made connection
+18:56:57.907 INFO  Model.MenuLauncher : calling start
+18:56:58.083 INFO  Controller.MenuController : calling initialize
+18:57:01.051 INFO  Controller.MenuController : bookListClicked
+18:57:01.052 INFO  Controller.MenuController : changeViews
+18:57:01.064 INFO  Database.BookGateway : fetching books
+18:57:01.097 INFO  Book.Book : calling book
+18:57:01.098 INFO  Book.Book : calling book
+18:57:01.102 INFO  Book.Book : calling book
+18:57:01.102 INFO  Book.Book : calling book
+18:57:01.103 INFO  Book.Book : calling book
+18:57:01.104 INFO  Book.Book : calling book
+18:57:01.105 INFO  Book.Book : calling book
+18:57:01.105 INFO  Book.Book : calling book
+18:57:01.106 INFO  Book.Book : calling book
+18:57:01.107 INFO  Book.Book : calling book
+18:57:01.165 INFO  Controller.BookListController : calling initialize
+18:57:04.018 INFO  Controller.BookListController : Book Clicked
+18:57:04.965 INFO  Controller.BookListController : Delete Button Clicked
+18:57:04.965 INFO  Book.Book : calling book.delete
+18:57:04.966 INFO  Database.BookGateway : gateway deleteing book
+18:57:06.839 INFO  Controller.BookListController : Delete Button Clicked
+18:57:06.840 INFO  Book.Book : calling book.delete
+18:57:06.841 INFO  Database.BookGateway : gateway deleteing book
+18:57:08.693 INFO  Controller.BookListController : Book Clicked
+18:57:08.854 INFO  Controller.BookListController : Book Clicked
+18:57:08.855 INFO  Controller.BookListController : Book Homage to Catalonia    City places    1938    George Orwell    456572    2018-03-09clicked
+18:57:08.855 INFO  Controller.MenuController : changeViews
+18:57:08.868 INFO  Database.PublisherGateway : fetching publishers
+18:57:08.877 INFO  Controller.BookDetailController : Homage to Catalonia    City places    1938    George Orwell    456572    2018-03-09
+18:57:08.898 INFO  Database.BookGateway : getAuthorsForBook
+18:57:08.909 INFO  Book.Book : calling book
+18:57:08.990 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:57:10.752 INFO  Controller.BookDetailController : Author Clicked
+18:57:10.889 INFO  Controller.BookDetailController : Author Clicked
+18:57:10.890 INFO  Controller.BookDetailController : 3.4
+18:57:10.890 INFO  Controller.MenuController : changeViews
+18:57:17.533 INFO  Database.AuthorBookGateway : updating authorBook
+18:57:17.560 INFO  Database.BookGateway : gateway inserting audit entry
+18:57:17.594 INFO  Controller.MenuController : changeViews
+18:57:17.594 INFO  Database.PublisherGateway : fetching publishers
+18:57:17.599 INFO  Controller.BookDetailController : Homage to Catalonia    City places    1938    George Orwell    456572    2018-03-09
+18:57:17.600 INFO  Database.BookGateway : getAuthorsForBook
+18:57:17.605 INFO  Book.Book : calling book
+18:57:17.630 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:57:20.475 INFO  Controller.BookDetailController : Author Clicked
+18:57:21.212 INFO  Controller.BookDetailController : Delete Author Button Clicked
+18:57:24.428 INFO  Controller.BookDetailController : Author Clicked
+18:57:28.204 INFO  Controller.BookDetailController : Back button clicked
+18:57:28.204 INFO  Controller.MenuController : changeViews
+18:57:28.205 INFO  Database.BookGateway : fetching books
+18:57:28.211 INFO  Book.Book : calling book
+18:57:28.212 INFO  Book.Book : calling book
+18:57:28.213 INFO  Book.Book : calling book
+18:57:28.214 INFO  Book.Book : calling book
+18:57:28.215 INFO  Book.Book : calling book
+18:57:28.215 INFO  Book.Book : calling book
+18:57:28.216 INFO  Book.Book : calling book
+18:57:28.217 INFO  Book.Book : calling book
+18:57:28.217 INFO  Book.Book : calling book
+18:57:28.218 INFO  Book.Book : calling book
+18:57:28.239 INFO  Controller.BookListController : calling initialize
+18:57:32.213 INFO  Controller.BookListController : Book Clicked
+18:57:32.365 INFO  Controller.BookListController : Book Clicked
+18:57:32.366 INFO  Controller.BookListController : Book Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09clicked
+18:57:32.367 INFO  Controller.MenuController : changeViews
+18:57:32.368 INFO  Database.PublisherGateway : fetching publishers
+18:57:32.374 INFO  Controller.BookDetailController : Giants Want My Cake    And I won't share    1207    Unknown    568498    2018-03-09
+18:57:32.375 INFO  Database.BookGateway : getAuthorsForBook
+18:57:32.380 INFO  Book.Book : calling book
+18:57:32.403 INFO  Controller.BookDetailController : bookdetailcontroller init
+18:57:36.687 INFO  Controller.BookDetailController : Back button clicked
+18:57:36.696 INFO  Controller.MenuController : changeViews
+18:57:36.697 INFO  Database.BookGateway : fetching books
+18:57:36.703 INFO  Book.Book : calling book
+18:57:36.704 INFO  Book.Book : calling book
+18:57:36.705 INFO  Book.Book : calling book
+18:57:36.706 INFO  Book.Book : calling book
+18:57:36.706 INFO  Book.Book : calling book
+18:57:36.707 INFO  Book.Book : calling book
+18:57:36.708 INFO  Book.Book : calling book
+18:57:36.708 INFO  Book.Book : calling book
+18:57:36.709 INFO  Book.Book : calling book
+18:57:36.710 INFO  Book.Book : calling book
+18:57:36.720 INFO  Controller.BookListController : calling initialize
+18:57:38.561 INFO  Controller.MenuController : author List clicked
+18:57:38.561 INFO  Controller.MenuController : changeViews
+18:57:38.589 INFO  Controller.AuthorListController : calling initialize
+18:57:41.491 INFO  Controller.AuthorListController : Mouse Clicked
+18:57:41.627 INFO  Controller.AuthorListController : Mouse Clicked
+18:57:41.628 INFO  Controller.AuthorListController : Author Jane Austenclicked
+18:57:41.629 INFO  Controller.MenuController : changeViews
+18:57:41.692 INFO  Controller.AuthorDetailController : calling initialize()
+18:57:41.692 INFO  Controller.AuthorDetailController : Jane Austen
+18:57:45.034 INFO  Controller.AuthorDetailController : audit trail for author clicked
+18:57:45.035 INFO  Controller.MenuController : changeViews
+18:57:45.046 INFO  Database.AuthorGateway : fetching audit trail ofJane Austen
+18:57:46.455 INFO  Controller.AuditTrailController : back button clicked
+18:57:46.463 INFO  Controller.MenuController : changeViews
+18:57:46.487 INFO  Controller.AuthorDetailController : calling initialize()
+18:57:46.488 INFO  Controller.AuthorDetailController : Jane Austen
+18:57:50.849 INFO  Controller.AuthorDetailController : calling onSave
+18:57:50.859 INFO  Controller.AuthorDetailController : Jane Austen
+18:57:50.860 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+18:57:50.902 INFO  Book.Author : calling Author.save()
+18:57:50.902 INFO  Book.Author : calling update()
+18:57:50.902 INFO  Book.Author : Jane Austen
+18:57:50.903 INFO  Database.AuthorGateway : calling updateAuthor
+18:57:50.903 INFO  Database.AuthorGateway : gatewar inserting audit trail
+18:57:50.908 INFO  Database.AuthorGateway : gateway inserting audit entry
+18:57:50.959 INFO  Database.AuthorGateway : obtaining the timestamp for the author
+18:57:50.965 INFO  Controller.MenuController : changeViews
+18:57:50.976 INFO  Controller.AuthorListController : calling initialize
+18:57:52.403 INFO  Controller.AuthorListController : Mouse Clicked
+18:57:52.546 INFO  Controller.AuthorListController : Mouse Clicked
+18:57:52.547 INFO  Controller.AuthorListController : Author Jane Austenclicked
+18:57:52.547 INFO  Controller.MenuController : changeViews
+18:57:52.574 INFO  Controller.AuthorDetailController : calling initialize()
+18:57:52.574 INFO  Controller.AuthorDetailController : Jane Austen
+18:57:53.678 INFO  Controller.AuthorDetailController : audit trail for author clicked
+18:57:53.687 INFO  Controller.MenuController : changeViews
+18:57:53.688 INFO  Database.AuthorGateway : fetching audit trail ofJane Austen
+18:57:53.695 INFO  Book.AuditTrailEntry : auditTrailEntry constructor
+18:57:57.136 INFO  Controller.MenuController : about button clicked
+18:57:57.137 INFO  Controller.MenuController : changeViews
+18:57:57.160 INFO  Controller.MenuController : calling initialize
+18:57:58.393 INFO  Controller.MenuController : Button clicked
+18:57:58.394 INFO  Controller.MenuController : changeViews
+18:57:58.395 INFO  Database.BookGateway : fetching books
+18:57:58.401 INFO  Book.Book : calling book
+18:57:58.402 INFO  Book.Book : calling book
+18:57:58.403 INFO  Book.Book : calling book
+18:57:58.403 INFO  Book.Book : calling book
+18:57:58.404 INFO  Book.Book : calling book
+18:57:58.404 INFO  Book.Book : calling book
+18:57:58.405 INFO  Book.Book : calling book
+18:57:58.405 INFO  Book.Book : calling book
+18:57:58.406 INFO  Book.Book : calling book
+18:57:58.406 INFO  Book.Book : calling book
+18:57:58.428 INFO  Controller.BookListController : calling initialize
+18:58:00.949 INFO  Controller.MenuController : exitClicked
+18:58:00.949 INFO  Controller.MenuController : calling exit
+18:58:00.953 INFO  Model.MenuLauncher : calling stop
+18:58:00.956 INFO  Model.MenuLauncher : closed connection
+20:06:40.592 INFO  Model.MenuLauncher : calling init
+20:06:41.375 INFO  Model.MenuLauncher : made connection
+20:06:41.420 INFO  Model.MenuLauncher : calling start
+20:06:41.732 INFO  Controller.MenuController : calling initialize
+20:06:44.644 INFO  Controller.MenuController : bookListClicked
+20:06:44.644 INFO  Controller.MenuController : changeViews
+20:06:44.658 INFO  Database.BookGateway : fetching books
+20:06:44.715 INFO  Book.Book : calling book
+20:06:44.716 INFO  Book.Book : calling book
+20:06:44.717 INFO  Book.Book : calling book
+20:06:44.718 INFO  Book.Book : calling book
+20:06:44.719 INFO  Book.Book : calling book
+20:06:44.720 INFO  Book.Book : calling book
+20:06:44.721 INFO  Book.Book : calling book
+20:06:44.722 INFO  Book.Book : calling book
+20:06:44.722 INFO  Book.Book : calling book
+20:06:44.723 INFO  Book.Book : calling book
+20:06:44.796 INFO  Controller.BookListController : calling initialize
+20:06:46.535 INFO  Controller.BookListController : Book Clicked
+20:06:46.688 INFO  Controller.BookListController : Book Clicked
+20:06:46.689 INFO  Controller.BookListController : Book fasdasd    sadfasdfas    1981    Mark Twain    sdfasdf    2018-03-20clicked
+20:06:46.690 INFO  Controller.MenuController : changeViews
+20:06:46.702 INFO  Database.PublisherGateway : fetching publishers
+20:06:46.730 INFO  Controller.BookDetailController : fasdasd    sadfasdfas    1981    Mark Twain    sdfasdf    2018-03-20
+20:06:46.763 INFO  Database.BookGateway : getAuthorsForBook
+20:06:46.797 INFO  Book.Book : calling book
+20:06:46.885 INFO  Controller.BookDetailController : bookdetailcontroller init
+20:06:50.239 INFO  Controller.BookDetailController : Back button clicked
+20:06:50.248 INFO  Controller.MenuController : changeViews
+20:06:50.248 INFO  Database.BookGateway : fetching books
+20:06:50.275 INFO  Book.Book : calling book
+20:06:50.276 INFO  Book.Book : calling book
+20:06:50.277 INFO  Book.Book : calling book
+20:06:50.278 INFO  Book.Book : calling book
+20:06:50.278 INFO  Book.Book : calling book
+20:06:50.279 INFO  Book.Book : calling book
+20:06:50.280 INFO  Book.Book : calling book
+20:06:50.285 INFO  Book.Book : calling book
+20:06:50.286 INFO  Book.Book : calling book
+20:06:50.286 INFO  Book.Book : calling book
+20:06:50.319 INFO  Controller.BookListController : calling initialize
+20:06:51.025 INFO  Controller.BookListController : Book Clicked
+20:06:51.152 INFO  Controller.BookListController : Book Clicked
+20:06:51.153 INFO  Controller.BookListController : Book Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    3467    2018-03-09clicked
+20:06:51.153 INFO  Controller.MenuController : changeViews
+20:06:51.153 INFO  Database.PublisherGateway : fetching publishers
+20:06:51.179 INFO  Controller.BookDetailController : Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    3467    2018-03-09
+20:06:51.180 INFO  Database.BookGateway : getAuthorsForBook
+20:06:51.239 INFO  Controller.BookDetailController : bookdetailcontroller init
+20:06:55.943 INFO  Controller.BookDetailController : calling saveButtonClicked
+20:06:55.943 INFO  Controller.BookDetailController : no author associated with book
+20:06:57.860 INFO  Controller.BookDetailController : Add Author Button Clicked
+20:06:57.869 INFO  Controller.MenuController : changeViews
+20:06:57.870 INFO  Book.Book : calling book
+20:06:57.870 INFO  Book.AuthorBook : new AuthorBook
+20:06:57.925 INFO  Controller.AddAuthorController : calling addAuthor init
+20:06:57.925 INFO  Controller.AddAuthorController : Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    2534    2018-03-09
+20:07:02.678 INFO  Controller.AddAuthorController : saving author
+20:07:02.679 INFO  Book.Book : calling book
+20:07:02.679 INFO  Database.AuthorBookGateway : calling insertAuthor
+20:07:02.735 INFO  Database.BookGateway : gateway inserting audit entry
+20:07:02.785 INFO  Controller.MenuController : changeViews
+20:07:02.786 INFO  Database.PublisherGateway : fetching publishers
+20:07:02.811 INFO  Controller.BookDetailController : Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    2534    2018-03-09
+20:07:02.812 INFO  Database.BookGateway : getAuthorsForBook
+20:07:02.838 INFO  Book.Book : calling book
+20:07:02.871 INFO  Controller.BookDetailController : bookdetailcontroller init
+20:07:04.179 INFO  Controller.BookDetailController : calling saveButtonClicked
+20:07:04.188 INFO  Book.Book : calling Book.save
+20:07:04.188 INFO  Book.Book : Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    2534    2018-03-09
+20:07:04.189 INFO  Book.Book : calling update()
+20:07:04.189 INFO  Database.BookGateway : gateway updateing book
+20:07:04.190 INFO  Database.BookGateway : gatewar inserting audit trail
+20:07:04.216 INFO  Database.BookGateway : gateway inserting audit entry
+20:07:04.395 INFO  Controller.MenuController : changeViews
+20:07:04.395 INFO  Database.BookGateway : fetching books
+20:07:04.421 INFO  Book.Book : calling book
+20:07:04.422 INFO  Book.Book : calling book
+20:07:04.423 INFO  Book.Book : calling book
+20:07:04.423 INFO  Book.Book : calling book
+20:07:04.424 INFO  Book.Book : calling book
+20:07:04.425 INFO  Book.Book : calling book
+20:07:04.425 INFO  Book.Book : calling book
+20:07:04.426 INFO  Book.Book : calling book
+20:07:04.427 INFO  Book.Book : calling book
+20:07:04.427 INFO  Book.Book : calling book
+20:07:04.447 INFO  Controller.BookListController : calling initialize
+20:07:07.087 INFO  Controller.BookListController : Book Clicked
+20:07:07.248 INFO  Controller.BookListController : Book Clicked
+20:07:07.248 INFO  Controller.BookListController : Book Animal Farm    animals    1945    George Orwell    4578879    2018-03-09clicked
+20:07:07.249 INFO  Controller.MenuController : changeViews
+20:07:07.250 INFO  Database.PublisherGateway : fetching publishers
+20:07:07.277 INFO  Controller.BookDetailController : Animal Farm    animals    1945    George Orwell    4578879    2018-03-09
+20:07:07.278 INFO  Database.BookGateway : getAuthorsForBook
+20:07:07.304 INFO  Book.Book : calling book
+20:07:07.329 INFO  Controller.BookDetailController : bookdetailcontroller init
+20:07:09.659 INFO  Controller.BookDetailController : Back button clicked
+20:07:09.660 INFO  Controller.MenuController : changeViews
+20:07:09.660 INFO  Database.BookGateway : fetching books
+20:07:09.687 INFO  Book.Book : calling book
+20:07:09.688 INFO  Book.Book : calling book
+20:07:09.689 INFO  Book.Book : calling book
+20:07:09.690 INFO  Book.Book : calling book
+20:07:09.690 INFO  Book.Book : calling book
+20:07:09.691 INFO  Book.Book : calling book
+20:07:09.692 INFO  Book.Book : calling book
+20:07:09.692 INFO  Book.Book : calling book
+20:07:09.693 INFO  Book.Book : calling book
+20:07:09.693 INFO  Book.Book : calling book
+20:07:09.703 INFO  Controller.BookListController : calling initialize
+20:07:10.469 INFO  Controller.BookListController : Book Clicked
+20:07:10.622 INFO  Controller.BookListController : Book Clicked
+20:07:10.622 INFO  Controller.BookListController : Book dfasd    sdfasdfasd    1981    Mark Twain    dsfasdf    2018-03-20clicked
+20:07:10.623 INFO  Controller.MenuController : changeViews
+20:07:10.624 INFO  Database.PublisherGateway : fetching publishers
+20:07:10.649 INFO  Controller.BookDetailController : dfasd    sdfasdfasd    1981    Mark Twain    dsfasdf    2018-03-20
+20:07:10.650 INFO  Database.BookGateway : getAuthorsForBook
+20:07:10.676 INFO  Book.Book : calling book
+20:07:10.696 INFO  Controller.BookDetailController : bookdetailcontroller init
+20:07:12.234 INFO  Controller.BookDetailController : Back button clicked
+20:07:12.235 INFO  Controller.MenuController : changeViews
+20:07:12.236 INFO  Database.BookGateway : fetching books
+20:07:12.262 INFO  Book.Book : calling book
+20:07:12.263 INFO  Book.Book : calling book
+20:07:12.264 INFO  Book.Book : calling book
+20:07:12.265 INFO  Book.Book : calling book
+20:07:12.265 INFO  Book.Book : calling book
+20:07:12.266 INFO  Book.Book : calling book
+20:07:12.267 INFO  Book.Book : calling book
+20:07:12.268 INFO  Book.Book : calling book
+20:07:12.268 INFO  Book.Book : calling book
+20:07:12.269 INFO  Book.Book : calling book
+20:07:12.277 INFO  Controller.BookListController : calling initialize
+20:07:13.113 INFO  Controller.BookListController : Book Clicked
+20:07:13.266 INFO  Controller.BookListController : Book Clicked
+20:07:13.266 INFO  Controller.BookListController : Book Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    2534    2018-03-09clicked
+20:07:13.267 INFO  Controller.MenuController : changeViews
+20:07:13.268 INFO  Database.PublisherGateway : fetching publishers
+20:07:13.293 INFO  Controller.BookDetailController : Burmese Daysdfsdfasd    lady on cover    1934    George Orwell    2534    2018-03-09
+20:07:13.294 INFO  Database.BookGateway : getAuthorsForBook
+20:07:13.319 INFO  Book.Book : calling book
+20:07:13.344 INFO  Controller.BookDetailController : bookdetailcontroller init
+20:07:14.701 INFO  Controller.BookDetailController : Back button clicked
+20:07:14.701 INFO  Controller.MenuController : changeViews
+20:07:14.702 INFO  Database.BookGateway : fetching books
+20:07:14.728 INFO  Book.Book : calling book
+20:07:14.729 INFO  Book.Book : calling book
+20:07:14.730 INFO  Book.Book : calling book
+20:07:14.730 INFO  Book.Book : calling book
+20:07:14.731 INFO  Book.Book : calling book
+20:07:14.732 INFO  Book.Book : calling book
+20:07:14.733 INFO  Book.Book : calling book
+20:07:14.733 INFO  Book.Book : calling book
+20:07:14.734 INFO  Book.Book : calling book
+20:07:14.734 INFO  Book.Book : calling book
+20:07:14.744 INFO  Controller.BookListController : calling initialize
+20:07:17.108 INFO  Controller.MenuController : exitClicked
+20:07:17.109 INFO  Controller.MenuController : calling exit
+20:07:17.116 INFO  Model.MenuLauncher : calling stop
+20:07:17.120 INFO  Model.MenuLauncher : closed connection

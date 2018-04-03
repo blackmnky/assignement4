@@ -122,6 +122,11 @@ public class BookDetailController implements MyController, Initializable {
     				yearPublishedField.clear();
     				return;
     			}
+    			if(abList.size() < 1) {
+    				logger.info("no author associated with book");
+    				AlertHelper.showWarningMessage("Error", "There must be at least one author associated with the book", "Please add at least one author");
+    				return;
+    			}
     			book.save();
     			try {    					
 					MenuController.getInstance().changeViews(MenuController.BOOKLIST, "");
